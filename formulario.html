@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Una página simple de una panadería artesanal que muestra los productos, formas de contactarse, direcciones">
+    <meta name="keywords" content="pan, panadería, panaderia, tulancingo, acatlan, artesanal, trigo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="./assets/bread.ico" type="image/x-icon">
+    <title>Trigo y Tradición.</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img src="assets/logo.png" alt="Logo de la empresa" title="Logo" width="20%"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html#productos">Productos</a></li>
+                <li><a href="index.html#sucursales">Sucursales</a></li>
+                <li><a href="index.html#pedido">Haz tu pedido</a></li>
+            </ul>
+        </nav>
+        <h1>Solicita tu cotización</h1>
+    </header>
+
+    <main>
+        <form action="myscrip.php" method="get">
+            <!-- type puede ser "text","password, "submit" boton 
+             name y value tienen valores y son los que se mandan nombre de la variable y el valor que toma la variable
+             autofocus es par irte a ese campo desde de carga la pagina-->
+            <fieldset>
+                <legend>Datos del cliente</legend>
+
+                <label for="name">Nombre:</label>
+                <br>
+                <input type="text" id="name" name="Name" placeholder="Ingresa aqui tu nombre">
+                <br>
+
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos del pedido</legend>
+
+                <label for="producto">Categoría del producto:</label>
+                <br>
+                <select name="producto" id="producto">
+                    <option value="salada">Panadería salada</option>
+                    <option value="dulce">Panadería dulce</option>
+                    <option value="pizzas">Pzzas</option>
+                </select>
+                <br>
+
+                <label for="description">Descripción:</label>
+                <br>
+                <textarea name="description" id="description" cols="60" rows="10"
+                    placeholder="Escribe una breve descripción de tu pedido, si es necesario anexa una imagen de lo que requieres..."
+                    required></textarea>
+                <br>
+
+                <label for="cv">Anexa imagen:</label>
+                <br>
+                <input type="file" id="pedido" name="pedido">
+                <br>
+
+                <label for="fecha">Fecha a solicitar:</label>
+                <br>
+                <input type="datetime-local" name="fecha" id="fecha">
+
+
+            </fieldset>
+            <input type="submit" value="Listo">
+            <input type="reset" value="Borrar">
+
+        </form>
+
+
+    </main>
+
+    <footer>
+        <section class="nosotros">
+            <h4>DONDE EL TRIGO SE ENCUENTRA CON LA TRADICIÓN</h4>
+            <a href="nosotros.html">Acerca de nosotros</a>
+        </section>
+
+        <section class="siguenos">
+            <!--target nos indica si el enlace se abre en una nueva ventana del navegador-->
+            <h5>SÍGUENOS<h5>
+                    <a href="https://facebook.com" target="_blank" style="margin-right:2%; margin-left: 2%"><img
+                            src="assets/facebook.svg" alt="Facebook" width="3%"></a>
+                    <a href="https://twitter.com" target="_blank" style="margin-right:2%; margin-left: 2%"> <img
+                            src="assets/x-twitter.svg" alt="Twitter" width="3%"></a>
+                    <a href="https://instagram.com" target="_blank" style="margin-right:2%; margin-left: 2%"><img
+                            src="assets/instagram.svg" alt="Instagram" width="3%"></a>
+        </section>
+        <p>&copy; 2024 María Fuentes. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
