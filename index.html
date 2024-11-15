@@ -8,25 +8,28 @@
      description: el navegador las búsquedas muestran una descripción y un título
      busqueda con un -->
     <meta name="description"
-        content="Una página simple de una panadería artesanal que muestra los productos, formas de contactarse, direcciones"/>
-    <meta name="keywords" content="pan, panadería, panaderia, tulancingo, acatlan, artesanal, trigo"/>
-    <meta name="author" content="María de Jesús Fuentes"/>
+        content="Panadería artesanal, nos apasiona el arte de hacer pan, un arte que requiere tiempo,
+        paciencia y dedicación..."/>
+    <meta name="keywords" content="pan, panadería, panaderia, tulancingo, acatlan, artesanal, trigo, tradicion">
+    <meta name="author" content="María de Jesús Fuentes">
     <!-- Open grap nos sirve para optimización en redes sociales como Facebook, Instragram y whatsapp -
       og:type puede ser web page
       og:image se puede subir una imagen a un reposotorio
       og:url se usa para poner la url de esta página
       -->
-    <meta property="og:title" content="Portafolio de María de Jesús"/>
-    <meta property="og:description" content="Perfil profesional de María de Jesús, estudiante HTML"/>
-    <meta property="og:image" content="https://github.com/ChuchitaFuentes/trigo-y-tradicion/blob/main/assets/logo.png"/>
-    <meta propertuy="og:url" content=""/>
-    <meta property="og:type" content="webpage"/>
+    <meta property="og:title" content="Panadería y Tradición">
+    <meta property="og:description" content="Panadería artesanal, nos apasiona el arte de hacer pan, un arte que requiere tiempo,
+    paciencia y dedicación...">
+    <meta property="og:image" content="https://raw.githubusercontent.com/ChuchitaFuentes/trigo-y-tradicion/refs/heads/main/assets/logo.png">
+    <meta propertuy="og:url" content="https://chuchitafuentes.github.io/trigo-y-tradicion/index.html">
+    <meta property="og:type" content="webpage">
     <!-- Twitter Cards para visualizar el contenido compartido en X -->
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="Trigo y tradición"/>
-    <meta name="twitter:description" content="Una panadería con tradición"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Trigo y tradición">
+    <meta name="twitter:description" content="Panadería artesanal, nos apasiona el arte de hacer pan, un arte que requiere tiempo,
+    paciencia y dedicación...">
     <meta propertuy="twitter:image"
-        content="https://github.com/ChuchitaFuentes/trigo-y-tradicion/blob/main/assets/logo.png"/>
+        content="https://raw.githubusercontent.com/ChuchitaFuentes/trigo-y-tradicion/refs/heads/main/assets/logo.png">
 
     <!-- link zone -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -37,7 +40,9 @@
 <body>
     <header>
         <a href="index.html"><img src="assets/logo.png" alt="Logo de la empresa" title="Logo" width="20%"></a>
-        <!-- aria-label nos sirve para indicar el proposito de una etiqueta en este caso de nav navegación o secciones de la pagina  -->
+        <!-- aria-label 
+         comunmente es para elementos que no tienen un título
+         nos sirve para indicar el proposito de una etiqueta en este caso de nav navegación o secciones de la pagina  -->
         <nav aria-label="Enlaces de navegación en las secciones">
             <ul>
                 <li><a href="#productos">Productos</a></li>
@@ -53,9 +58,9 @@
             <img src="assets/horno.jpg" alt="Horno" width="50%">
             <img src="assets/panadero.jpg" alt="Panadero" width="50%">
         </section>
-
-        <section id="productos">
-            <h2>Productos</h2>
+        <!-- aria-labelledby apunta a un id de otro elemento cercano que ya contiene titulo -->
+        <section id="productos" aria-labelledby="descripcion-productos">
+            <h2 id="descripcion-productos">Productos</h2>
             <hr>
             <p>Cada producto es una obra maestra hecha con cariño y dedicación. Nuestros panes son elaborados siguiendo
                 las técnicas tradicionales de la panadería artesanal, utilizando solo los mejores ingredientes
@@ -124,13 +129,13 @@
     </main>
 
     <footer>
-        <section class="nosotros">
+        <section id="nosotros">
             <h4>DONDE EL TRIGO SE ENCUENTRA CON LA TRADICIÓN</h4>
             <a href="nosotros.html">Acerca de nosotros</a>
 
         </section>
 
-        <section class="siguenos">
+        <section id="siguenos">
             <!--target nos indica si el enlace se abre en una nueva ventana del navegador-->
             <h5>SÍGUENOS<h5>
                     <a href="https://facebook.com" target="_blank" style="margin-right:2%; margin-left: 2%"><img
