@@ -38,12 +38,13 @@ Para visualizar este proyecto en tu máquina local:
 
 2. Accede a la carpeta del proyecto:
 
-cd restaurante-sabor-local
-
+    ```bash
+    cd restaurante-sabor-local
 
 3. Abre el archivo index.html el tu navegador web para visualizar el sitio:
 
-open index.html
+    ```bash
+    open index.html
 
 ## Uso
 Este es proyecto es una página web y puede ser utilizado como ejemplo para crear sitios de venta de productos. 
