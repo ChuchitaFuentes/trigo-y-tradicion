@@ -36,12 +36,13 @@ Para visualizar este proyecto en tu máquina local:
    ```bash
    git clone https://github.com/ChuchitaFuentes/trigo-y-tradicion.git
 
-2. Accede a la carpeta del proyecto 
-   ```bash
-cd trigo-y-tradicion
+2. Accede a la carpeta del proyecto:
+
+cd restaurante-sabor-local
+
 
 3. Abre el archivo index.html el tu navegador web para visualizar el sitio:
-   ```bash
+
 open index.html
 
 ## Uso
