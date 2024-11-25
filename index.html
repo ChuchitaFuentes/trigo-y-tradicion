@@ -7,9 +7,8 @@
     <!-- Metadatos para SEO  Optimización para búsqueda de navegadores 
      description: el navegador las búsquedas muestran una descripción y un título
      busqueda con un -->
-    <meta name="description"
-        content="Panadería artesanal, nos apasiona el arte de hacer pan, un arte que requiere tiempo,
-        paciencia y dedicación..."/>
+    <meta name="description" content="Panadería artesanal, nos apasiona el arte de hacer pan, un arte que requiere tiempo,
+        paciencia y dedicación..." />
     <meta name="keywords" content="pan, panadería, panaderia, tulancingo, acatlan, artesanal, trigo, tradicion">
     <meta name="author" content="María de Jesús Fuentes">
     <!-- Open grap nos sirve para optimización en redes sociales como Facebook, Instragram y whatsapp -
@@ -17,10 +16,11 @@
       og:image se puede subir una imagen a un reposotorio
       og:url se usa para poner la url de esta página
       -->
-    <meta property="og:title" content="Panadería y Tradición">
+    <meta property="og:title" content="Trigo y Tradición">
     <meta property="og:description" content="Panadería artesanal, nos apasiona el arte de hacer pan, un arte que requiere tiempo,
     paciencia y dedicación...">
-    <meta property="og:image" content="https://raw.githubusercontent.com/ChuchitaFuentes/trigo-y-tradicion/refs/heads/main/assets/logo.png">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/ChuchitaFuentes/trigo-y-tradicion/refs/heads/main/assets/logo.png">
     <meta propertuy="og:url" content="https://chuchitafuentes.github.io/trigo-y-tradicion/index.html">
     <meta property="og:type" content="webpage">
     <!-- Twitter Cards para visualizar el contenido compartido en X -->
@@ -30,33 +30,42 @@
     paciencia y dedicación...">
     <meta propertuy="twitter:image"
         content="https://raw.githubusercontent.com/ChuchitaFuentes/trigo-y-tradicion/refs/heads/main/assets/logo.png">
-
+    <!-- Enlace de las fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- link zone -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/20bef6ff43.js" crossorigin="anonymous"></script>
     <link rel="icon" href="./assets/bread.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
     <title>Trigo y Tradición</title>
 </head>
 
 <body>
+    <div>
     <header>
-        <a href="index.html"><img src="assets/logo.png" alt="Logo de la empresa" title="Logo" width="20%"></a>
+        <div class="logo">
+        <a href="index.html"><img src="assets/logo.png" alt="Logo de la empresa" title="Logo"></a>
+        </div>
         <!-- aria-label 
          comunmente es para elementos que no tienen un título
          nos sirve para indicar el proposito de una etiqueta en este caso de nav navegación o secciones de la pagina  -->
-        <nav aria-label="Enlaces de navegación en las secciones">
-            <ul>
+        <div>
+         <nav aria-label="Enlaces de navegación en las secciones">
+            <ul class="menu_navegacion">
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#sucursales">Sucursales</a></li>
                 <li><a href="#pedido">Haz tu pedido</a></li>
             </ul>
         </nav>
-        <h1>Trigo y Tradición</h1>
+        </div>
+        
     </header>
 
     <main>
         <section id="carrusel">
             <img src="assets/horno.jpg" alt="Horno" width="50%">
-            <img src="assets/panadero.jpg" alt="Panadero" width="50%">
         </section>
         <!-- aria-labelledby apunta a un id de otro elemento cercano que ya contiene titulo -->
         <section id="productos" aria-labelledby="descripcion-productos">
@@ -117,8 +126,7 @@
         <section id="pedido">
             <h2>Haz tu pedido</h2>
             <hr>
-            <a href="https://wa.me/" target="_blank" style="margin-right:2%; margin-left: 2%"><img
-                    src="assets/whatsapp.svg" alt="Instagram" width="2%">Mándanos un whatsapp</a>
+            <a href="https://wa.me/" target="_blank"><i class="fa-brands fa-whatsapp"></i>Mándanos un whatsapp</a>
             <a href="formulario.html" target="_blank"> <span class="material-icons">list_alt</span>Puedes solicitar una
                 cotización</a>
             <br>
@@ -132,18 +140,14 @@
         <section id="nosotros">
             <h4>DONDE EL TRIGO SE ENCUENTRA CON LA TRADICIÓN</h4>
             <a href="nosotros.html">Acerca de nosotros</a>
-
         </section>
 
         <section id="siguenos">
             <!--target nos indica si el enlace se abre en una nueva ventana del navegador-->
             <h5>SÍGUENOS<h5>
-                    <a href="https://facebook.com" target="_blank" style="margin-right:2%; margin-left: 2%"><img
-                            src="assets/facebook.svg" alt="Facebook" width="3%"></a>
-                    <a href="https://twitter.com" target="_blank" style="margin-right:2%; margin-left: 2%"> <img
-                            src="assets/x-twitter.svg" alt="Twitter" width="3%"></a>
-                    <a href="https://instagram.com" target="_blank" style="margin-right:2%; margin-left: 2%"><img
-                            src="assets/instagram.svg" alt="Instagram" width="3%"></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
         </section>
         <p>&copy; 2024 María Fuentes. Todos los derechos reservados.</p>
     </footer>
