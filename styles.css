@@ -1,0 +1,86 @@
+:root{
+    --color-primario: black;
+    --color-background: white;
+    --color-acentos: rgba(125, 150, 144, .5);
+    --color-bordes: darkgray;
+    --color-backgroundSections: aliceblue;
+    --color-texto: black;
+}
+/* Reset básico */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* Normalize */
+body{
+        font-family: "Roboto Condensed", sans-serif;
+        line-height: 1.5;
+        color: var(--color-primario);
+        background-color: var(--color-background);
+        margin: 0;
+        padding: 16px;
+        
+}
+
+header {
+    display: flex; /* Organiza elementos en una línea horizontal */
+    justify-content: space-between; /* Distribuye espacio entre logo y menú */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin: 2% 10%;
+    padding: 1% 1%;
+    color: white;
+    background-color: var(--color-backgroundSections); /* Fondo oscuro */
+  }
+
+ 
+
+  section{
+    margin: 2% 10%;
+    padding: 1% 1%;
+    border: 2px solid black;
+    background-color: var(--color-backgroundSections);
+
+    
+  }
+
+h2{
+    text-align: left;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0 0 0.7 0;
+    letter-spacing: -0.025;
+}
+
+
+
+/* Header  */
+ .logo img {
+    width: 30%; /* Ajusta el tamaño del logo */
+  }
+.menu_navegacion {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; /* Disponer los elementos en línea */
+    background-color: var(--color-background); 
+    color: var(--color-texto);
+  }
+
+  .menu_navegacion li {
+    margin: 1%;
+  }
+  
+  .menu_navegacion a {
+    display: block; /* Permite aplicar padding al enlace */
+    padding: 15px 20px;
+    text-decoration: none; 
+    color: var(--color-texto);
+  }
+  
+  .menu_navegacion a:hover {
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Suaviza la transición */
+  }
+
+  
