@@ -11,6 +11,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    
 }
 /* Normalize */
 body{
@@ -21,66 +22,66 @@ body{
         margin: 0;
         padding: 16px;
         
+        
 }
-
+/* Header section */
 header {
+    position: fixed;
     display: flex; /* Organiza elementos en una línea horizontal */
     justify-content: space-between; /* Distribuye espacio entre logo y menú */
     align-items: center; /* Centra verticalmente los elementos */
-    margin: 2% 10%;
-    padding: 1% 1%;
+    top: 0;
+    left: 0;
+    right:0;
+    padding: 2rem 9%;
     color: white;
-    background-color: var(--color-backgroundSections); /* Fondo oscuro */
+    background-color: var(--color-background); 
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem var(--color-acentos); /*Da sombra a la barra*/
   }
 
- 
+header .logo img{
+  width: 15rem; /* Ajusta el tamaño del logo */
+}
 
-  section{
+header .menu_navegacion{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-background);
+}
+header .menu_navegacion  li{
+  margin: .2rem;
+ }
+
+header .menu_navegacion  a{
+  display: block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0 1.5rem;
+  color: var(--color-primario);
+}
+
+header .menu_navegacion a:hover {
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Suaviza la transición */
+}
+
+section{
+    display: flex;
     margin: 2% 10%;
     padding: 1% 1%;
     border: 2px solid black;
-    background-color: var(--color-backgroundSections);
-
-    
+    background-color: var(--color-backgroundSections);    
   }
 
-h2{
-    text-align: left;
-    font-weight: 300;
-    line-height: 1.5;
-    margin: 0 0 0.7 0;
-    letter-spacing: -0.025;
-}
 
 
 
-/* Header  */
- .logo img {
-    width: 30%; /* Ajusta el tamaño del logo */
-  }
-.menu_navegacion {
-    list-style: none; 
-    padding: 0;
-    margin: 0;
-    display: flex; /* Disponer los elementos en línea */
-    background-color: var(--color-background); 
-    color: var(--color-texto);
-  }
 
-  .menu_navegacion li {
-    margin: 1%;
-  }
+
+
+
   
-  .menu_navegacion a {
-    display: block; /* Permite aplicar padding al enlace */
-    padding: 15px 20px;
-    text-decoration: none; 
-    color: var(--color-texto);
-  }
-  
-  .menu_navegacion a:hover {
-    font-weight: bold;
-    transition: background-color 0.3s ease; /* Suaviza la transición */
-  }
 
   

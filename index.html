@@ -51,15 +51,15 @@
         <!-- aria-label 
          comunmente es para elementos que no tienen un título
          nos sirve para indicar el proposito de una etiqueta en este caso de nav navegación o secciones de la pagina  -->
-        <div>
-         <nav aria-label="Enlaces de navegación en las secciones">
+        
+         <nav aria-label="Enlaces de navegación en las secciones" >
             <ul class="menu_navegacion">
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#sucursales">Sucursales</a></li>
                 <li><a href="#pedido">Haz tu pedido</a></li>
             </ul>
         </nav>
-        </div>
+        
         
     </header>
 
@@ -68,14 +68,14 @@
             <img src="assets/horno.jpg" alt="Horno" width="50%">
         </section>
         <!-- aria-labelledby apunta a un id de otro elemento cercano que ya contiene titulo -->
-        <section id="productos" aria-labelledby="descripcion-productos">
+        <section class=productos id="productos" aria-labelledby="descripcion-productos">
             <h2 id="descripcion-productos">Productos</h2>
             <hr>
-            <p>Cada producto es una obra maestra hecha con cariño y dedicación. Nuestros panes son elaborados siguiendo
+            <p class="description">Cada producto es una obra maestra hecha con cariño y dedicación. Nuestros panes son elaborados siguiendo
                 las técnicas tradicionales de la panadería artesanal, utilizando solo los mejores ingredientes
                 naturales. Aquí, la frescura y el sabor se combinan para brindarte una experiencia única que no solo
                 satisface, sino que enamora.</p>
-            <img src="assets/producto.jpeg" alt="Foto productos" width="20%">
+            <img src="assets/producto.jpeg" alt="Foto productos" width="20%" >
             <br>
             <a href="menu.html">Menú</a>
         </section>
