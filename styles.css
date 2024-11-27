@@ -21,9 +21,28 @@ body{
         background-color: var(--color-background);
         margin: 0;
         padding: 16px;
-        
-        
 }
+section{
+    padding: 2rem 9%; 
+  }
+
+.boton{
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background-color: var(--color-acentos);
+  color: var(--color-texto);
+  padding:  .9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.boton:hover{
+  background-color: var(--color-primario);
+  color: white;
+}
+
+
 /* Header section */
 header {
     position: fixed;
@@ -33,13 +52,13 @@ header {
     top: 0;
     left: 0;
     right:0;
-    padding: 2rem 9%;
+    padding: .2rem 9%;
     color: white;
     background-color: var(--color-background); 
     z-index: 1000;
     box-shadow: 0 .5rem 1rem var(--color-acentos); /*Da sombra a la barra*/
   }
-
+  
 header .logo img{
   width: 15rem; /* Ajusta el tamaño del logo */
 }
@@ -53,7 +72,6 @@ header .menu_navegacion{
 header .menu_navegacion  li{
   margin: .2rem;
  }
-
 header .menu_navegacion  a{
   display: block;
   text-decoration: none;
@@ -67,15 +85,11 @@ header .menu_navegacion a:hover {
   transition: background-color 0.3s ease; /* Suaviza la transición */
 }
 
-section{
-    display: flex;
-    margin: 2% 10%;
-    padding: 1% 1%;
-    border: 2px solid black;
-    background-color: var(--color-backgroundSections);    
-  }
+/* Carrusel section */
 
+section .carrusel{
 
+}
 
 
 
