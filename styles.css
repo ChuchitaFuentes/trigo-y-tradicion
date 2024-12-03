@@ -71,6 +71,9 @@ hr {
 a{
   text-decoration: none;
 }
+h3{
+  font-size: 1.5rem;
+}
 
 /* Header section */
 .logo img {
@@ -201,4 +204,25 @@ a{
   border-radius: 50%;
   
 }
+
+/* Sección de sucursales */
+.sucursales{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sucursales li{
+  list-style: none;
+}
+
+.sucursal{
+  padding: .3rem;
+  text-align: left;
+  width: 50%;
+}
+
+
 

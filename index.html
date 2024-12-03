@@ -35,10 +35,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <!-- link zone -->
+    <!-- link iconos google -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- link font awesome -->
     <script src="https://kit.fontawesome.com/20bef6ff43.js" crossorigin="anonymous"></script>
+    <!-- link icono de la pestaña -->
     <link rel="icon" href="./assets/bread.ico" type="image/x-icon">
+    <!-- link conexion css -->
     <link rel="stylesheet" href="styles.css">
     <title>Trigo y Tradición</title>
 </head>
@@ -91,7 +94,7 @@
                         naturales. Aquí, la frescura y el sabor se combinan para brindarte una experiencia única que no
                         solo
                         satisface, sino que enamora.</p>
-                        <br>
+                    <br>
                     <a class="boton_link" href="menu.html">Menú</a>
                 </div>
                 <span class="imagen">
@@ -104,36 +107,56 @@
                 <h2>Sucursales</h2>
                 <hr>
                 <ul class="sucursales">
-                    <li>
+                    <li class="sucursal">
                         <h3>Tulancingo</h3>
-                        <ul>
-                            <li>
+                        <ul class="datos">
+                            <li class="elemento_lista">
                                 <a href="https://www.google.com/maps/place/20%C2%B007'08.0%22N+98%C2%B024'14.0%22W/@20.1188851,-98.4064639,17z/data=!3m1!4b1!4m4!3m3!8m2!3d20.1188851!4d-98.403889?hl=en&entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D"
-                                    target="_blank"> Calle Carreta 103, Rincónes de la Hacienda 1ra.sección, Tulancingo,
-                                    Hgo.</a>
+                                    target="_blank">
+                                    <span class="elemento_lista_icono">
+                                         <i class="material-icons">location_on</i>
+                                        </span>                                    
+                                    <span class="elemento_lista_descripcion"> Calle Carreta 103, Rincónes de la Hacienda 1ra.sección, Tulancingo,
+                                        Hgo.</span>
+                                </a>
                             </li>
                             <li>
-                                775 111 1111
+                                <span>
+                                    <i class="material-icons">call</i>
+                                </span>
+                                
+                                <span>775 111 1111</span>
                             </li>
                             <li>
-                                Lunes a Sábado 10:00-19:00 <br>
+                                <span class="material-icons">schedule</span>
+                                <span>
+                                    Lunes a Sábado 10:00-19:00 <br>
                                 Domingo 10:00-18:00
+                                </span>
+                                
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="sucursal">
                         <h3>Acatlán</h3>
-                        <ul>
-                            <li>
-                                <a href="https://www.google.com/maps/place/Benito+Ju%C3%A1rez+12,+43553+Acatl%C3%A1n,+Hgo./@20.1376468,-98.449012,17z/data=!4m6!3m5!1s0x85d0ff8511e0136b:0xcf667e3d180a4232!8m2!3d20.1376092!4d-98.449526!16s%2Fg%2F11thql6qy3?hl=en&entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D"
-                                    target="_blank">Calle Libertad de cultos 23, Col. Benito Juárez, Acatlán, Hgo.</a>
+                        <ul class="datos">
+                            <li class="elemento">
+                                <a class="elemento_descripcion"href="https://www.google.com/maps/place/Benito+Ju%C3%A1rez+12,+43553+Acatl%C3%A1n,+Hgo./@20.1376468,-98.449012,17z/data=!4m6!3m5!1s0x85d0ff8511e0136b:0xcf667e3d180a4232!8m2!3d20.1376092!4d-98.449526!16s%2Fg%2F11thql6qy3?hl=en&entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank">
+                                    <span>
+                                        <i class="material-icons">location_on</i>
+                                    </span>
+                                    <span class="direccion">Calle Libertad de cultos 23, Col. Benito Juárez, Acatlán, Hgo.</span>
+                                    </a>
                             </li>
                             <li>
-                                775 111 1111
+                                <span class="material-icons">call</span>
+                                <span>775 111 1111</span>
                             </li>
                             <li>
-                                Lunes a Sábado 10:00-19:00 <br>
-                                Domingo 10:00-18:00
+                                <span class="material-icons">schedule</span>
+                                <span>Lunes a Sábado 10:00-19:00 <br>
+                                    Domingo 10:00-18:00</span>
                             </li>
                         </ul>
 
