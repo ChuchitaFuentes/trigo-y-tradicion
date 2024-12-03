@@ -1,78 +1,95 @@
-:root{
-    --color-primario: black;
-    --color-background: white;
-    --color-acentos: rgba(125, 150, 144, .5);
-    --color-bordes: darkgray;
-    --color-backgroundSections: aliceblue;
-    --color-texto: black;
+:root {
+  --color-primario: black;
+  --color-background: white;
+  --color-acentos: rgba(125, 150, 144, .5);
+  --color-bordes: darkgray;
+  --color-backgroundSections: lightgray;
+  --color-texto: black;
 }
+
 /* Reset básico */
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
+
 /* Normalize */
-body{
-        font-family: "Roboto Condensed", sans-serif;
-        line-height: 1.5;
-        color: var(--color-primario);
-        background-color: var(--color-background);
-        margin: 0;
-        padding: 16px;
-}
-section{
-    padding: 2rem 9%; 
-  }
-
-.boton{
-  display: inline-block;
-  margin-top: 1rem;
-  border-radius: 5rem;
-  background-color: var(--color-acentos);
-  color: var(--color-texto);
-  padding:  .9rem 3.5rem;
-  cursor: pointer;
-  font-size: 1.7rem;
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.5;
+  color: var(--color-primario);
+  background-color: var(--color-background);
+  margin: 0px;
+  padding: 0px;
 }
 
-.boton:hover{
-  background-color: var(--color-primario);
+header {
+  display: flex;
+  /* Organiza elementos en una línea horizontal */
+  justify-content: space-between;
+  /* Distribuye espacio entre logo y menú */
+  align-items: center;
+  /* Centra verticalmente los elementos */
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .2rem 9%;
   color: white;
+  background-color: var(--color-background);
+  z-index: 1000;
+  box-shadow: 0 .5rem 1rem var(--color-acentos);
+  /*Da sombra a la barra*/
 }
 
+main {
+  padding: 2rem 9%;
+}
+
+footer {
+  padding: 2rem 9%;
+}
+
+section {
+  display: block;
+  padding: 2rem 3%;
+  margin: 1rem 2%;
+}
+h2{
+  font-size: 2rem;
+}
+hr {
+  border: none;
+  height: 2px;
+  width: 200px;
+  margin: 1em 0;
+  background: linear-gradient(to right, black, gray);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+a{
+  text-decoration: none;
+}
 
 /* Header section */
-header {
-    position: fixed;
-    display: flex; /* Organiza elementos en una línea horizontal */
-    justify-content: space-between; /* Distribuye espacio entre logo y menú */
-    align-items: center; /* Centra verticalmente los elementos */
-    top: 0;
-    left: 0;
-    right:0;
-    padding: .2rem 9%;
-    color: white;
-    background-color: var(--color-background); 
-    z-index: 1000;
-    box-shadow: 0 .5rem 1rem var(--color-acentos); /*Da sombra a la barra*/
-  }
-  
-header .logo img{
-  width: 15rem; /* Ajusta el tamaño del logo */
+.logo img {
+  width: 15rem;
+  /* Ajusta el tamaño del logo */
 }
 
-header .menu_navegacion{
+.menu_navegacion {
   display: flex;
   padding: 0;
   margin: 0;
   background-color: var(--color-background);
 }
-header .menu_navegacion  li{
+
+.menu_navegacion li {
   margin: .2rem;
- }
-header .menu_navegacion  a{
+}
+
+.menu_navegacion a {
   display: block;
   text-decoration: none;
   font-size: 1.5rem;
@@ -80,22 +97,108 @@ header .menu_navegacion  a{
   color: var(--color-primario);
 }
 
-header .menu_navegacion a:hover {
+.menu_navegacion a:hover {
   font-weight: bold;
-  transition: background-color 0.3s ease; /* Suaviza la transición */
+  transition: background-color 0.3s ease;
+  /* Suaviza la transición */
 }
 
-/* Carrusel section */
-
-section .carrusel{
-
+/* Contenedor del carrusel */
+.carousel {
+  margin: 2rem 9%;
+  justify-content: center;
+  position: relative;
+  /* Para posicionar los botones dentro del carrusel */
+  width: 80%;
+  max-width: 600px;
+  overflow: hidden;
+  /* Oculta las imágenes que no están visibles */
+  border-radius: 10px;
 }
 
+/* Pista del carrusel */
+.carousel-track {
+  display: flex;
+  /* Alinea las imágenes en fila */
+  transition: transform 0.5s ease-in-out;
+  /* Para animaciones suaves */
+}
 
+/* Contenedor de la pista */
+.carousel-track-container {
+  overflow: hidden;
+  /* Asegura que solo se vea una imagen a la vez */
+}
 
+/* Imágenes */
+.carousel-track img {
+  width: 100%;
+  /* Las imágenes ocupan todo el ancho disponible */
+  flex-shrink: 0;
+  /* Evita que las imágenes se reduzcan */
+  object-fit: cover;
+  /* Ajusta las imágenes para que encajen bien */
+}
 
+/* Botones */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.2);
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  z-index: 1;
+}
 
+.carousel-button.prev {
+  left: 10px;
+}
 
+.carousel-button.next {
+  right: 10px;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Seccion de Productos */
+.productos{
+  display: flex;
+}
+.contenido{
+  display: block;
+}
+.description{
+  display: inline-block;
+  width: 90%;
+  text-align: justify;
+}
+
+.boton_link{
+  display: inline-block;
+  margin: .5em;
+  padding: .5em;
+  box-shadow: inset 0 0 0 1px var(--color-bordes);
+  background-color: transparent;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  min-width: 9.25em;
+  line-height: 1.75em;
+}
+.imagen{
+  display: inline;
+
+}
+.imagen img {
+  width: 80%;
+  border-radius: 50%;
   
+}
 
-  
