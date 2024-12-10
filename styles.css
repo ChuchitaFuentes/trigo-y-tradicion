@@ -1,10 +1,12 @@
 :root {
-  --color-primario: black;
-  --color-background: white;
-  --color-acentos: rgba(125, 150, 144, .5);
+  --color-texto-primario: black;
+  --color-primario: white;
+  --color-texto-secundario:#333;
+  --color-secundario:#f5f5f5;
+  --color-texto-terciario:white;
+  --color-terciario:black;
   --color-bordes: darkgray;
-  --color-backgroundSections: lightgray;
-  --color-texto: black;
+  --color-acentos: rgba(125, 150, 144, .5);
 }
 
 /* Reset básico */
@@ -19,8 +21,8 @@
 body {
   font-family: "Roboto Condensed", sans-serif;
   line-height: 1.5;
-  color: var(--color-primario);
-  background-color: var(--color-background);
+  color: var(--color-texto-primario);
+  background-color: var(--color-primario);
   margin: 0px;
   padding: 0px;
 }
@@ -37,7 +39,7 @@ header {
   right: 0;
   padding: .2rem 9%;
   color: white;
-  background-color: var(--color-background);
+  background-color: var(--color-primario);
   z-index: 1000;
   box-shadow: 0 .5rem 1rem var(--color-acentos);
   /*Da sombra a la barra*/
@@ -52,7 +54,7 @@ footer {
 }
 
 section {
-  display: block;
+  display:block;
   padding: 2rem 3%;
   margin: 1rem 2%;
 }
@@ -85,7 +87,7 @@ h3{
   display: flex;
   padding: 0;
   margin: 0;
-  background-color: var(--color-background);
+  background-color: var(--color-primario);
 }
 
 .menu_navegacion li {
@@ -97,7 +99,7 @@ h3{
   text-decoration: none;
   font-size: 1.5rem;
   padding: 0 1.5rem;
-  color: var(--color-primario);
+  color: var(--color-texto-primario);
 }
 
 .menu_navegacion a:hover {
@@ -173,17 +175,23 @@ h3{
 /* Seccion de Productos */
 .productos{
   display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  gap:1rem;
+  align-items: center;
+  justify-content: center;
 }
-.contenido{
-  display: block;
+.productos_descripcion{
+ flex-grow: 2;
 }
-.description{
-  display: inline-block;
-  width: 90%;
-  text-align: justify;
+.productos_imagen{
+flex-grow: 1;
+}
+.descripcion_texto{
+text-align: justify;
 }
 
-.boton_link{
+.descripcion_boton{
   display: inline-block;
   margin: .5em;
   padding: .5em;
@@ -195,18 +203,18 @@ h3{
   min-width: 9.25em;
   line-height: 1.75em;
 }
-.imagen{
-  display: inline;
 
-}
-.imagen img {
-  width: 80%;
-  border-radius: 50%;
+.productos_imagen img {
+  border-radius: 100%;
   
+  padding: .65em;
+  border: solid 1px var(--color-bordes);
+  max-width: 100%;
 }
 
-/* Sección de sucursales */
+/* Sección de sucursales 
 .sucursales{
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -214,15 +222,10 @@ h3{
   align-items: center;
 }
 
-.sucursales li{
+.datos{
   list-style: none;
 }
-
-.sucursal{
-  padding: .3rem;
-  text-align: left;
-  width: 50%;
-}
+*/
 
 
 
