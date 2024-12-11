@@ -45,9 +45,11 @@ header {
   /*Da sombra a la barra*/
 }
 
-main {
+ main {
+  /* display: flex;
+  flex-direction: column; */
   padding: 2rem 9%;
-}
+} 
 
 footer {
   padding: 2rem 9%;
@@ -77,10 +79,10 @@ h3{
   font-size: 1.5rem;
 }
 
-/* Header section */
+/* Header section--------------------------------------------------------------------------------- */
 .logo img {
   width: 15rem;
-  /* Ajusta el tamaño del logo */
+ 
 }
 
 .menu_navegacion {
@@ -97,7 +99,7 @@ h3{
 .menu_navegacion a {
   display: block;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding: 0 1.5rem;
   color: var(--color-texto-primario);
 }
@@ -105,10 +107,10 @@ h3{
 .menu_navegacion a:hover {
   font-weight: bold;
   transition: background-color 0.3s ease;
-  /* Suaviza la transición */
+  
 }
 
-/* Contenedor del carrusel */
+/* Contenedor del carrusel ------------------------------------------------------------*/
 .carousel {
   margin: 2rem 9%;
   justify-content: center;
@@ -172,7 +174,7 @@ h3{
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Seccion de Productos */
+/* Seccion de Productos----------------------------------------------------------------------- */
 .productos{
   display: flex;
   flex-direction:row;
@@ -193,39 +195,70 @@ text-align: justify;
 
 .descripcion_boton{
   display: inline-block;
-  margin: .5em;
-  padding: .5em;
+  margin: .5rem;
+  padding: .5rem;
   box-shadow: inset 0 0 0 1px var(--color-bordes);
   background-color: transparent;
   border-radius: 8px;
   text-align: center;
   cursor: pointer;
-  min-width: 9.25em;
-  line-height: 1.75em;
+  min-width: 9.25rem;
+  line-height: 1.75rem;
 }
 
 .productos_imagen img {
   border-radius: 100%;
-  
-  padding: .65em;
+  padding: .65rem;
   border: solid 1px var(--color-bordes);
   max-width: 100%;
 }
 
-/* Sección de sucursales 
-.sucursales{
+ /* Sección de sucursales --------------------------------------------------------------- */
+.lista_sucursales{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  
+}
+.item_sucursal{
+  width: 50%;
+  gap: 2rem;
+}
+.lugar{
+  text-align: center;
+  padding: .7rem;
+}
+.lista_datos_sucursales {
+  list-style: none; 
+  padding-left: 20px;
 }
 
-.datos{
-  list-style: none;
+.lista_datos_sucursales li {
+  position: relative; 
+  padding-left: 2rem; 
 }
-*/
 
+.lista_datos_sucursales li::before {
+  font-family: "Material Icons"; 
+  font-size: 20px; 
+  color:var(--color-texto-primario); 
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.lista_datos_sucursales li:first-child::before {
+  content: "location_on"; /* Ícono para el primer elemento */
+}
+.lista_datos_sucursales li:nth-child(2)::before {
+  content: "call"; /* Ícono para el segundo elemento */
+  
+}
+.lista_datos_sucursales li:nth-child(3)::before {
+  content: "schedule"; /* Ícono para el tercer elemento */
+}
 
 
