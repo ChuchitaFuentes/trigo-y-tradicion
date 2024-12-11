@@ -53,12 +53,14 @@ header {
 
 footer {
   padding: 2rem 9%;
+  background-color: darkcyan;
 }
 
 section {
   display:block;
   padding: 2rem 3%;
   margin: 1rem 2%;
+  height: 100vh;
 }
 h2{
   font-size: 2rem;
@@ -213,19 +215,21 @@ text-align: justify;
   max-width: 100%;
 }
 
- /* Sección de sucursales --------------------------------------------------------------- */
+ /* Sección de sucursales ----------------------------------------------------------------------------------- */
 .lista_sucursales{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
+  gap: 2rem;
   
 }
 .item_sucursal{
-  width: 50%;
-  gap: 2rem;
+  width: 8rem;
+  min-width: 40%;
+  
 }
 .lugar{
   text-align: center;
@@ -262,3 +266,37 @@ text-align: justify;
 }
 
 
+/* Haz tu pedido -------------------------------------------------------------------------------------------*/
+.contenedor_pedidos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.tarjeta_pedidos{
+  color: var(--color-texto-secundario);
+  border:1px solid var(--color-bordes);
+  text-align: center;
+  border-radius: 0.5rem;
+  width: 12rem;
+  height: 8rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.tarjeta_pedidos span{
+  font-size: 2rem;
+}
+
+.tarjeta_pedidos:hover{
+  transform: scale(1.1);
+  font-weight: bold;
+  border:2.5px solid var(--color-bordes);
+}
+.requisitos{
+text-align: center;
+font-style: italic;
+}
