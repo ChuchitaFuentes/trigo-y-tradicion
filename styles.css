@@ -29,38 +29,39 @@ body {
 
 header {
   display: flex;
-  /* Organiza elementos en una línea horizontal */
   justify-content: space-between;
-  /* Distribuye espacio entre logo y menú */
   align-items: center;
-  /* Centra verticalmente los elementos */
   top: 0;
   left: 0;
   right: 0;
   padding: .2rem 9%;
-  color: white;
   background-color: var(--color-primario);
   z-index: 1000;
-  box-shadow: 0 .5rem 1rem var(--color-acentos);
+  box-shadow: 0 0rem 1.5rem var(--color-acentos);
   /*Da sombra a la barra*/
 }
 
  main {
-  /* display: flex;
-  flex-direction: column; */
   padding: 2rem 9%;
 } 
 
 footer {
-  padding: 2rem 9%;
-  background-color: darkcyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  padding: auto;
+  box-shadow: 0rem  0rem 1.5rem var(--color-acentos);
+  
 }
 
 section {
   display:block;
   padding: 2rem 3%;
   margin: 1rem 2%;
-  height: 100vh;
+  
 }
 h2{
   font-size: 2rem;
@@ -76,18 +77,20 @@ hr {
 }
 a{
   text-decoration: none;
+  color: black;
 }
 h3{
   font-size: 1.5rem;
 }
 
 /* Header section--------------------------------------------------------------------------------- */
+
 .logo img {
   width: 15rem;
- 
 }
 
 .menu_navegacion {
+  list-style: none;
   display: flex;
   padding: 0;
   margin: 0;
@@ -112,7 +115,7 @@ h3{
   
 }
 
-/* Contenedor del carrusel ------------------------------------------------------------*/
+/* Contenedor del hero ------------------------------------------------------------*/
 .carousel {
   margin: 2rem 9%;
   justify-content: center;
@@ -179,25 +182,30 @@ h3{
 /* Seccion de Productos----------------------------------------------------------------------- */
 .productos{
   display: flex;
-  flex-direction:row;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap:1rem;
   align-items: center;
   justify-content: center;
+  
 }
 .productos_descripcion{
+  width: 20rem;
  flex-grow: 2;
 }
 .productos_imagen{
+display: flex;
+align-items: center;
+justify-content: center;
 flex-grow: 1;
 }
 .descripcion_texto{
 text-align: justify;
 }
 
-.descripcion_boton{
+.boton{
   display: inline-block;
-  margin: .5rem;
+  margin: .5rem auto;
   padding: .5rem;
   box-shadow: inset 0 0 0 1px var(--color-bordes);
   background-color: transparent;
@@ -212,10 +220,11 @@ text-align: justify;
   border-radius: 100%;
   padding: .65rem;
   border: solid 1px var(--color-bordes);
-  max-width: 100%;
+  width: 12rem;
 }
 
  /* Sección de sucursales ----------------------------------------------------------------------------------- */
+ 
 .lista_sucursales{
   list-style: none;
   display: flex;
@@ -227,8 +236,8 @@ text-align: justify;
   
 }
 .item_sucursal{
-  width: 8rem;
-  min-width: 40%;
+  width: 25rem;
+  
   
 }
 .lugar{
@@ -267,6 +276,7 @@ text-align: justify;
 
 
 /* Haz tu pedido -------------------------------------------------------------------------------------------*/
+
 .contenedor_pedidos{
   display: flex;
   flex-direction: row;
@@ -277,6 +287,9 @@ text-align: justify;
 }
 
 .tarjeta_pedidos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--color-texto-secundario);
   border:1px solid var(--color-bordes);
   text-align: center;
@@ -300,3 +313,53 @@ text-align: justify;
 text-align: center;
 font-style: italic;
 }
+
+/* Seccion del footer--------------------------------------------------------- */
+ .informacion{
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: flex-start;
+  align-content: center;
+ }
+.subtitulo_footer{
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  
+}
+.nosotros{
+  width: 30rem;
+  text-align: center;
+}
+.siguenos{
+  width: 30rem;
+  text-align: center;
+}
+.enlaces_redes{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: .5rem;
+}
+.boton_redsocial{
+  border: 1px solid var(--color-bordes);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.nosotros p{
+  margin: 1rem 0;
+}
+
+.derechos{
+  margin:1rem 0;
+  padding:1rem 0;
+}
+
+/* MEDIA QUERIES -----------------------------------------------------------------------------*/
