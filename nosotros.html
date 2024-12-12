@@ -4,74 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Una página simple de una panadería artesanal que muestra los productos, formas de contactarse, direcciones">
-    <meta name="keywords" content="pan, panadería, panaderia, tulancingo, acatlan, artesanal, trigo">
+    <!-- Metadatos para SEO  Optimización para búsqueda de navegadores 
+     description: el navegador las búsquedas muestran una descripción y un título
+     busqueda con un -->
+    <meta name="description" content="Panadería artesanal, nos apasiona el arte de hacer pan, un arte que requiere tiempo,
+     paciencia y dedicación..." />
+    <meta name="keywords" content="pan, panadería, panaderia, tulancingo, acatlan, artesanal, trigo, tradicion">
+    <meta name="author" content="María de Jesús Fuentes">
+    <!-- Open grap nos sirve para optimización en redes sociales como Facebook, Instragram y whatsapp -
+   og:type puede ser web page
+   og:image se puede subir una imagen a un reposotorio
+   og:url se usa para poner la url de esta página
+   -->
+    <meta property="og:title" content="Trigo y Tradición">
+    <meta property="og:description" content="Panadería artesanal, nos apasiona el arte de hacer pan, un arte que requiere tiempo,
+ paciencia y dedicación...">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/ChuchitaFuentes/trigo-y-tradicion/refs/heads/main/assets/logo.png">
+    <meta propertuy="og:url" content="https://chuchitafuentes.github.io/trigo-y-tradicion/index.html">
+    <meta property="og:type" content="webpage">
+    <!-- Twitter Cards para visualizar el contenido compartido en X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Trigo y tradición">
+    <meta name="twitter:description" content="Panadería artesanal, nos apasiona el arte de hacer pan, un arte que requiere tiempo,
+ paciencia y dedicación...">
+    <meta propertuy="twitter:image"
+        content="https://raw.githubusercontent.com/ChuchitaFuentes/trigo-y-tradicion/refs/heads/main/assets/logo.png">
+    <!-- Enlace de las fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- link iconos google -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- link font awesome -->
+    <script src="https://kit.fontawesome.com/20bef6ff43.js" crossorigin="anonymous"></script>
+    <!-- link icono de la pestaña -->
     <link rel="icon" href="./assets/bread.ico" type="image/x-icon">
+    <!-- Conexion con css -->
+    <link rel="stylesheet" href="styles.css">
     <title>Trigo y Tradición.</title>
 </head>
 
 <body>
 
     <header>
-        <a href="index.html"><img src="assets/logo.png" alt="Logo de la empresa" title="Logo" width="20%"></a>
-        <nav>
-            <ul>
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo.png" alt="Logo de la empresa" title="Logo"></a>
+        </div>
+        <nav aria-label="Enlaces de navegación en las secciones" class="menu_navegacion1">
+            <ul class="menu_navegacion">
                 <li><a href="index.html#productos">Productos</a></li>
                 <li><a href="index.html#sucursales">Sucursales</a></li>
                 <li><a href="index.html#pedido">Haz tu pedido</a></li>
             </ul>
         </nav>
-        <h1>Acerca de nosotros</h1>
+
     </header>
 
     <main>
-
-<p> En Panadería Artesanal “Trigo y Tradición” nos apasiona el arte de hacer pan, un arte que requiere tiempo,
-    paciencia y dedicación. Somos una panadería familiar fundada con el deseo de traer a nuestra comunidad el sabor
-    auténtico del pan hecho a mano, con recetas tradicionales que pasan de generación en generación. Desde nuestros
-    inicios, nos hemos comprometido a ofrecer productos de alta calidad, elaborados con ingredientes naturales y
-    siguiendo métodos tradicionales que respetan los tiempos de fermentación y horneado.</p>
-       
-        <h2>Nuestro Proceso</h2>
-        <p>Cada día comenzamos de madrugada para asegurarnos de que el pan esté recién hecho y listo para nuestros
-            clientes. Utilizamos solo ingredientes naturales, sin conservantes ni aditivos, y trabajamos con masa madre y
-            harinas de origen local, garantizando frescura y un sabor único en cada pieza. Nuestros panaderos cuidan cada
-            detalle, desde el amasado a mano hasta el horneado en horno de piedra, lo que aporta una textura y sabor
-            inigualables a nuestros productos.</p>
-        <h2>Nuestra Filosofía</h2>
-        <p>Creemos que el pan es mucho más que un alimento; es un símbolo de hogar y comunidad. En “Trigo y Tradición”,
-            cada baguette, cada bollo y cada croissant representan nuestro compromiso de brindar productos honestos,
-            elaborados con cariño y dedicación. Nos enorgullece ser una panadería que combina lo mejor de las técnicas
-            artesanales con ingredientes frescos y locales.
-            Compromiso con la Comunidad
-            Además de crear panes deliciosos, apoyamos a nuestra comunidad al colaborar con agricultores locales y reducir
-            el uso de plásticos en nuestros empaques. Nuestra panadería también es un espacio donde los clientes pueden
-            aprender sobre el proceso de panificación a través de talleres y eventos especiales que realizamos
-            periódicamente.</p>
-        <h2>Te Esperamos</h2>
-        <p>Queremos que cada visita a “Trigo y Tradición” sea una experiencia memorable, que te transportes a una época en
-            la que el pan se hacía con paciencia y dedicación. Ven y descubre por qué el pan artesanal tiene un sabor
-            diferente, un sabor que te hace sentir en casa. ¡Te esperamos para compartir contigo el verdadero sabor del pan
-            hecho con amor!</p>
-
+        <h1 class="titulo_pagina_secundario">Acerca de nosotros</h1>
+        <p class="informacion_nosotros"> En Panadería Artesanal “Trigo y Tradición” nos apasiona el arte de hacer pan, un arte que requiere tiempo, paciencia y dedicación. Somos una panadería familiar fundada con el deseo de traer a nuestra comunidad el sabor auténtico del pan hecho a mano, con recetas tradicionales que pasan de generación en generación. Desde nuestros inicios, nos hemos comprometido a ofrecer productos de alta calidad, elaborados con ingredientes naturales y siguiendo métodos tradicionales que respetan los tiempos de fermentación y horneado.</p>
+        <div class="contenedor_nosotros">
+            <div class="carta_nosotros">
+                <h2>Nuestro Proceso</h2>
+                <p>Cada día comenzamos de madrugada para asegurarnos de que el pan esté recién hecho y listo para nuestros clientes. Utilizamos solo ingredientes naturales, sin conservantes ni aditivos, y trabajamos con masa madre y harinas de origen local, garantizando frescura y un sabor único en cada pieza. Nuestros panaderos cuidan cada detalle, desde el amasado a mano hasta el horneado en horno de piedra, lo que aporta una textura y sabor inigualables a nuestros productos.</p>
+            </div>
+            <div class="carta_nosotros">
+                <h2>Nuestra Filosofía</h2>
+                <p>Creemos que el pan es mucho más que un alimento; es un símbolo de hogar y comunidad. En “Trigo y Tradición”,cada baguette, cada bollo y cada croissant representan nuestro compromiso de brindar productos honestos, elaborados con cariño y dedicación. Nos enorgullece ser una panadería que combina lo mejor de las técnicas artesanales con ingredientes frescos y locales. Compromiso con la Comunidad. Además de crear panes deliciosos, apoyamos a nuestra comunidad al colaborar con agricultores locales y reducir el uso de plásticos en nuestros empaques. Nuestra panadería también es un espacio donde los clientes pueden aprender sobre el proceso de panificación a través de talleres y eventos especiales que realizamos periódicamente.</p>
+            </div>
+            <div class="carta_nosotros">
+                <h2>Te Esperamos</h2>
+                <p>Queremos que cada visita a “Trigo y Tradición” sea una experiencia memorable, que te transportes a una época en la que el pan se hacía con paciencia y dedicación. Ven y descubre por qué el pan artesanal tiene un sabordiferente, un sabor que te hace sentir en casa. ¡Te esperamos para compartir contigo el verdadero
+                    sabor del pan hecho con amor!</p>
+            </div>
 
     </main>
 
     <footer>
 
 
-        <!--target nos indica si el enlace se abre en una nueva ventana del navegador-->
-        <h5>SÍGUENOS<h5>
-                <a href="https://facebook.com" target="_blank" style="margin-right:2%; margin-left: 2%"><img
-                        src="assets/facebook.svg" alt="Facebook" width="3%"></a>
-                <a href="https://twitter.com" target="_blank" style="margin-right:2%; margin-left: 2%"> <img
-                        src="assets/x-twitter.svg" alt="Twitter" width="3%"></a>
-                <a href="https://instagram.com" target="_blank" style="margin-right:2%; margin-left: 2%"><img
-                        src="assets/instagram.svg" alt="Instagram" width="3%"></a>
+        <section id="siguenos" class="siguenos">
+            <h2 class="subtitulo_footer">Síguenos<h2>
+                    <div class="enlaces_redes">
+                        <a class="boton_redsocial" href="https://facebook.com" target="_blank"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a class="boton_redsocial" href="https://twitter.com" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a class="boton_redsocial" href="https://instagram.com" target="_blank"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+        </section>
 
-                <p>&copy; 2024 María Fuentes. Todos los derechos reservados.</p>
+        <div>
+            <p class="derechos">&copy; 2024 María Fuentes. Todos los derechos reservados.</p>
+        </div>
     </footer>
 </body>
 
