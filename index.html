@@ -41,9 +41,13 @@
     <script src="https://kit.fontawesome.com/20bef6ff43.js" crossorigin="anonymous"></script>
     <!-- link icono de la pestaña -->
     <link rel="icon" href="./assets/bread.ico" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- link conexion css -->
     <link rel="stylesheet" href="styles.css">
     <title>Trigo y Tradición</title>
+    
 </head>
 
 <body>
@@ -68,27 +72,49 @@
         </header>
 
         <main>
-            <div class="carousel">
-                <button class="carousel-button prev" aria-label="Anterior">&#8249;</button>
-                <div class="carousel-track-container">
-                    <div class="carousel-track">
-                        <img src="assets/horno.jpg" alt="Imagen 1">
-                        <img src="assets/panadero.jpg" alt="Imagen 2">
-                        <img src="assets/horno.jpg" alt="Imagen 3">
-                        <img src="assets/panadero.jpg" alt="Imagen 4">
+            <!-- Carrusel de bootstrap -->
+             <section id="carrusel">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active d-item">
+                        <img src="assets/imagenes_carrusel.jpg" class="d-block w-100 d-img" alt="imagen1">
+                    </div>
+
+                    <div class="carousel-item d-item">
+                        <img src="assets/imagenes_carrusel4.jpg" class="d-block w-100 d-img" alt="imagen2">
+                    </div>
+
+                    <div class="carousel-item d-item">
+                        <img src="assets/imagenes_carrusel3.jpg" class="d-block w-100 d-img" alt="imagen3">
                     </div>
                 </div>
-                <button class="carousel-button next" aria-label="Siguiente">&#8250;</button>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <script src="script.js"></script>
-            <!-- aria-labelledby apunta a un id de otro elemento cercano que ya contiene titulo -->
-
+        </section>
 
             <section id="productos" class="productos" aria-labelledby="descripcion-productos">
                 <div class="productos_descripcion">
                     <h2>Productos</h2>
                     <hr>
-                    <p class="descripcion_texto">Cada producto es una obra maestra hecha con cariño y dedicación. Nuestros
+                    <p class="descripcion_texto">Cada producto es una obra maestra hecha con cariño y dedicación.
+                        Nuestros
                         panes son elaborados siguiendo
                         las técnicas tradicionales de la panadería artesanal, utilizando solo los mejores ingredientes
                         naturales. Aquí, la frescura y el sabor se combinan para brindarte una experiencia única que no
@@ -98,7 +124,7 @@
                     <a class="boton" href="menu.html">Menú</a>
                 </div>
                 <div class="productos_imagen">
-                    <img src="assets/producto.jpeg" alt="Foto productos" >
+                    <img src="assets/producto.jpeg" alt="Foto productos">
                 </div>
             </section>
 
@@ -111,14 +137,15 @@
                         <ul class="lista_datos_sucursales">
                             <li class="elemento_lista_direccion">
                                 <a href="https://www.google.com/maps/place/20%C2%B007'08.0%22N+98%C2%B024'14.0%22W/@20.1188851,-98.4064639,17z/data=!3m1!4b1!4m4!3m3!8m2!3d20.1188851!4d-98.403889?hl=en&entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D"
-                                    target="_blank"> Calle Carreta 103, Rincónes de la Hacienda 1ra.sección, Tulancingo, Hgo.</a>
+                                    target="_blank"> Calle Carreta 103, Rincónes de la Hacienda 1ra.sección, Tulancingo,
+                                    Hgo.</a>
                             </li>
                             <li class="elemento_lista_telefono">
                                 775 111 1111
                             </li>
                             <li class="elemento_lista_horarios">
-                                    Lunes a Sábado 10:00-19:00 <br>
-                                    Domingo 10:00-18:00
+                                Lunes a Sábado 10:00-19:00 <br>
+                                Domingo 10:00-18:00
                             </li>
                         </ul>
                     </li>
@@ -146,16 +173,18 @@
                 <h2>Haz tu pedido</h2>
                 <hr>
                 <div class="contenedor_pedidos">
-                <a class="tarjeta_pedidos" href="https://wa.me/" target="_blank">
-                    <span class="fa-brands fa-whatsapp"></span><br>Mándanos un whatsapp
-                </a>
-                
-                <a class="tarjeta_pedidos" href="formulario.html" target="_blank"> <span class="material-icons">list_alt</span><br>Puedes solicitar
-                    una
-                    cotización</a>
-                <br>
+                    <a class="tarjeta_pedidos" href="https://wa.me/" target="_blank">
+                        <span class="fa-brands fa-whatsapp"></span><br>Mándanos un whatsapp
+                    </a>
+
+                    <a class="tarjeta_pedidos" href="formulario.html" target="_blank"> <span
+                            class="material-icons">list_alt</span><br>Puedes solicitar
+                        una
+                        cotización</a>
+                    <br>
                 </div>
-                <p class="requisitos">Los pedidos se entregan en el taller de producción o a domicilio. <br>Recuerda hacer tu pedido con
+                <p class="requisitos">Los pedidos se entregan en el taller de producción o a domicilio. <br>Recuerda
+                    hacer tu pedido con
                     anticipación.</p>
 
             </section>
@@ -163,25 +192,32 @@
 
         <footer>
             <div class="informacion">
-            <section id="nosotros" class="nosotros">
-                <h2 class="subtitulo_footer">Nosotros</h2>
-                <p>"Donde el trigo se encuentra con la tradición..."</p>
-                <a class="boton" href="nosotros.html">Más</a>
-            </section>
+                <section id="nosotros" class="nosotros">
+                    <h2 class="subtitulo_footer">Nosotros</h2>
+                    <p>"Donde el trigo se encuentra con la tradición..."</p>
+                    <a class="boton" href="nosotros.html">Más</a>
+                </section>
 
-            <section id="siguenos" class="siguenos">
-                <h2 class="subtitulo_footer">Síguenos<h2>
-                    <div class="enlaces_redes">
-                        <a class="boton_redsocial" href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a class="boton_redsocial"href="https://twitter.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a class="boton_redsocial"href="https://instagram.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-             </section>
+                <section id="siguenos" class="siguenos">
+                    <h2 class="subtitulo_footer">Síguenos<h2>
+                            <div class="enlaces_redes">
+                                <a class="boton_redsocial" href="https://facebook.com" target="_blank"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a class="boton_redsocial" href="https://twitter.com" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a class="boton_redsocial" href="https://instagram.com" target="_blank"><i
+                                        class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                </section>
             </div>
             <div>
-            <p class="derechos">&copy; 2024 María Fuentes. Todos los derechos reservados.</p>
-        </div>
+                <p class="derechos">&copy; 2024 María Fuentes. Todos los derechos reservados.</p>
+            </div>
         </footer>
+        <!-- JavaScript de Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

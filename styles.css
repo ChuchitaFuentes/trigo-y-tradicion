@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  
 }
 
 /* Normalize */
@@ -26,6 +26,7 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
 
 header {
   display: flex;
@@ -116,67 +117,14 @@ h3{
 }
 
 /* Contenedor del hero ------------------------------------------------------------*/
-.carousel {
-  margin: 2rem 9%;
-  justify-content: center;
-  position: relative;
-  /* Para posicionar los botones dentro del carrusel */
-  width: 80%;
-  max-width: 600px;
-  overflow: hidden;
-  /* Oculta las imágenes que no están visibles */
-  border-radius: 10px;
-}
+/* Se cargo un carrusel de bootstrap estas son lineas de codigo que se agregaron */
 
-/* Pista del carrusel */
-.carousel-track {
-  display: flex;
-  /* Alinea las imágenes en fila */
-  transition: transform 0.5s ease-in-out;
-  /* Para animaciones suaves */
+.d-item{
+  height: 500px;
 }
-
-/* Contenedor de la pista */
-.carousel-track-container {
-  overflow: hidden;
-  /* Asegura que solo se vea una imagen a la vez */
-}
-
-/* Imágenes */
-.carousel-track img {
-  width: 100%;
-  /* Las imágenes ocupan todo el ancho disponible */
-  flex-shrink: 0;
-  /* Evita que las imágenes se reduzcan */
+.d-img{
+  height: 100%;
   object-fit: cover;
-  /* Ajusta las imágenes para que encajen bien */
-}
-
-/* Botones */
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.2);
-  color: black;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  font-size: 18px;
-  z-index: 1;
-}
-
-.carousel-button.prev {
-  left: 10px;
-}
-
-.carousel-button.next {
-  right: 10px;
-}
-
-.carousel-button:hover {
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Seccion de Productos----------------------------------------------------------------------- */
@@ -351,6 +299,7 @@ font-style: italic;
   border-radius: 100%;
   width: 3rem;
   height: 3rem;
+
 }
 
 .nosotros p{
