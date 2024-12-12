@@ -1,12 +1,11 @@
 :root {
   --color-texto-primario: black;
-  --color-primario: white;
   --color-texto-secundario:#333;
-  --color-secundario:#f5f5f5;
   --color-texto-terciario:white;
-  --color-terciario:black;
+  --color-primario: white;
+  --color-secundario:black;
   --color-bordes: darkgray;
-  --color-acentos: rgba(125, 150, 144, .5);
+  --color-sombras: rgba(125, 150, 144, .5);
 }
 
 /* Reset básico */
@@ -40,7 +39,7 @@ header {
   gap: 1rem;
   background-color: var(--color-primario);
   z-index: 1000;
-  box-shadow: 0 0rem 1.5rem var(--color-acentos);
+  box-shadow: 0 0rem 1.5rem var(--color-sombras);
   /*Da sombra a la barra*/
 }
 
@@ -56,7 +55,7 @@ footer {
   width: 100%;
   margin: auto;
   padding: auto;
-  box-shadow: 0rem  0rem 1.5rem var(--color-acentos);
+  box-shadow: 0rem  0rem 1.5rem var(--color-sombras);
   
 }
 
@@ -322,7 +321,68 @@ font-style: italic;
   margin:1rem 0;
   padding:1rem 0;
 }
+/* ------------------------------------ZONA DE FORMULARIO----------------------------------------------- */
+.titulo_pagina{
+background-color: var(--color-secundario);
+color: var(--color-texto-terciario);
+text-align: center;
+}
 
+.formulario{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 1rem;
+  
+}
+.description{
+  width: 100%;
+}
+
+fieldset{
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--color-bordes);
+  border-radius: 1rem;
+  width: 100%;
+}
+legend{
+  font-size: 1.2rem;
+}
+.cliente{
+  border-radius: 20px;
+  border: solid 1px var(--color-bordes);
+  width: 50%;
+  padding: .5rem;
+  margin: .5rem;
+}
+label{
+  padding: .5rem;
+  margin: .5rem;
+}
+textarea{
+ border: 1px solid var(--color-bordes);
+ resize: none;
+ border-radius: 1rem;
+ padding: 1rem;
+ 
+}
+select, .fecha, .file{
+  margin: 1rem;
+  padding: .5rem;
+}
+.fecha{
+  border-radius: 20px;
+  border: 1px solid var(--color-bordes)
+}
+.boton_formulario{
+  
+  background-color: var(--color-secundario);
+  color: var(--color-texto-terciario);
+  border-radius: 20px;
+  width: 50%;
+  padding: .3rem;
+}
 /* MEDIA QUERIES -----------------------------------------------------------------------------
 @media screen and (max-width:480px){
   /* .menu_navegacion a{
