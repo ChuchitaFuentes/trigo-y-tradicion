@@ -100,8 +100,8 @@ h2,
 h3 {
   color: var(--color-texto-primario);
 }
-/* -----------------------------------------INICIA DISEÑO index.html--------------------------------------------------*/
-/* Header section--------------------------------------------------------------------------------- */
+/*-------------------------------------- DISEÑO FOOTER Y HEADER ----------------------------------------------------------------*/
+/* Header section */
 
 .logo img {
   width: 15rem;
@@ -126,16 +126,68 @@ h3 {
   font-size: 1rem;
   padding: 0 1rem;
   color: var(--color-texto-primario);
-
 }
 
 .menu_navegacion a:hover {
-
   transition: background-color 0.3s ease;
-
 }
 
-/* Contenedor del hero ------------------------------------------------------------*/
+/*Footer section */
+.informacion {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.subtitulo_footer {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.nosotros {
+  width: 30rem;
+  text-align: center;
+  padding: 0 0;
+}
+
+.siguenos {
+  width: 30rem;
+  text-align: center;
+  padding: 0 0;
+}
+
+.enlaces_redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: .5rem;
+}
+
+.boton_redsocial {
+  border: 1px solid var(--color-bordes);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.nosotros p {
+  margin: 1rem 0;
+}
+
+.derechos {
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+
+/* -----------------------------------------DISEÑO index.html-------------------------------------------------------------------*/
+/* Seccion de hero, carrusel de imagenes*/
 /* Se cargo un carrusel de bootstrap estas son lineas de codigo que se agregaron */
 .carrusel {
   margin: 0;
@@ -151,7 +203,7 @@ h3 {
   object-fit: cover;
 }
 
-/* Seccion de Productos----------------------------------------------------------------------- */
+/* Seccion de Productos*/
 .productos {
   display: flex;
   flex-direction: row;
@@ -159,7 +211,6 @@ h3 {
   gap: 1rem;
   align-items: center;
   justify-content: center;
-
 }
 
 .productos_descripcion {
@@ -198,8 +249,7 @@ h3 {
   width: 12rem;
 }
 
-/* Sección de sucursales ----------------------------------------------------------------------------------- */
-
+/* Sección de sucursales */
 .lista_sucursales {
   list-style: none;
   display: flex;
@@ -208,7 +258,6 @@ h3 {
   justify-content: space-around;
   align-items: flex-start;
   gap: 2rem;
-
 }
 
 .item_sucursal {
@@ -255,9 +304,7 @@ h3 {
   /* Ícono para el tercer elemento */
 }
 
-
-/* Haz tu pedido -------------------------------------------------------------------------------------------*/
-
+/* Seccion Haz tu pedido*/
 .contenedor_pedidos {
   display: flex;
   flex-direction: row;
@@ -296,66 +343,8 @@ h3 {
   color: var(--color-texto-requisitos);
 }
 
-/* Seccion del footer--------------------------------------------------------- */
-.informacion {
-  display: flex;
-  gap: 2rem;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  align-content: center;
-}
 
-.subtitulo_footer {
-  font-size: 1.5rem;
-  padding: 1rem 0;
-
-}
-
-.nosotros {
-  width: 30rem;
-  text-align: center;
-  padding: 0 0;
-
-}
-
-.siguenos {
-  width: 30rem;
-  text-align: center;
-  padding: 0 0;
-
-}
-
-.enlaces_redes {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: .5rem;
-}
-
-.boton_redsocial {
-  border: 1px solid var(--color-bordes);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  width: 3rem;
-  height: 3rem;
-
-}
-
-.nosotros p {
-  margin: 1rem 0;
-
-}
-
-.derechos {
-  margin: 1rem 0;
-  padding: 1rem 0;
-}
-
-/* ------------------------------------ZONA DE FORMULARIO----------------------------------------------- */
+/* -------------------------------------------------DISEÑO formulario.html-----------------------------------------*/
 .titulo_pagina {
   background-color: var(--color-secundario);
   color: var(--color-texto-terciario);
@@ -367,7 +356,6 @@ h3 {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-
 }
 
 .description {
@@ -404,7 +392,6 @@ textarea {
   resize: none;
   border-radius: 1rem;
   padding: 1rem;
-
 }
 
 select,
@@ -420,7 +407,6 @@ select,
 }
 
 .boton_formulario {
-
   background-color: var(--color-secundario);
   color: var(--color-texto-terciario);
   border-radius: 20px;
@@ -428,14 +414,13 @@ select,
   padding: .3rem;
 }
 
-/* -----------------------------------ZONA DE NOSOTROS------------------------------------------ */
+/* ------------------------------------------------DISEÑO formulario.html--------------------------------------------------- */
 .titulo_pagina_secundario {
   background-color: var(--color-terciario);
   color: var(--color-texto-primario);
   text-align: center;
 }
 
-/*Cajas de información */
 .titulo_pagina_secundario span {
   font-size: 2rem;
   margin: .5rem;
@@ -501,7 +486,7 @@ select,
   animation-delay: 1s;
 }
 
-/* --------------------------------------------ZONA DE MENÚ--------------------------------------------------------- */
+/* ----------------------------------------------------DISEÑO menu.html---------------------------------------------------- */
 .titulo_pagina_terciario {
   text-transform: uppercase;
   background-color: var(--color-secundario);
@@ -544,7 +529,7 @@ select,
   text-align: center;
 }
 
-/* ----------------------------------------------ZONA DE PRODUCTOS SALADOS DULCES PIZZAS--------------------------------- */
+/*------------------------------DISEÑO salados.html (funcional tambien para dulces.html y pizzas.html)-------------------------*/
 .nav_productos {
   display: flex;
   justify-content: space-between;
@@ -578,7 +563,7 @@ select,
   font-style: italic;
 }
 
-/* -------------------------------Sección producto individual-------------------------- */
+/*--------------------------DISEÑO bolillo.html (funcional tambien para baguette.html, mantecada.html, etc.)-------------------------*/
 .encabezado_secundario {
   background-color: var(--color-terciario);
   text-align: center;
@@ -631,7 +616,7 @@ select,
   font-size: 1.2rem;
 }
 
-/* --------------------------------------------MEDIA QUERIES--------------------------------------------------- */
+/* --------------------------------------------MEDIA QUERIES ZONE--------------------------------------------------------------------- */
 @media screen and (max-width:595px) {
 
   /* modifica la seccion menu de productos en salados dulces y pizzas */
