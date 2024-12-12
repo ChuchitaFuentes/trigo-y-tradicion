@@ -47,7 +47,7 @@
     <!-- link conexion css -->
     <link rel="stylesheet" href="styles.css">
     <title>Trigo y Tradición</title>
-    
+
 </head>
 
 <body>
@@ -56,58 +56,52 @@
             <div class="logo">
                 <a href="index.html"><img src="assets/logo.png" alt="Logo de la empresa" title="Logo"></a>
             </div>
-            <!-- aria-label 
-         comunmente es para elementos que no tienen un título
-         nos sirve para indicar el proposito de una etiqueta en este caso de nav navegación o secciones de la pagina  -->
-
-            <nav aria-label="Enlaces de navegación en las secciones">
+            <nav aria-label="Enlaces de navegación en las secciones" class="menu_navegacion1">
                 <ul class="menu_navegacion">
                     <li><a href="#productos">Productos</a></li>
                     <li><a href="#sucursales">Sucursales</a></li>
                     <li><a href="#pedido">Haz tu pedido</a></li>
                 </ul>
             </nav>
-
-
         </header>
 
         <main>
             <!-- Carrusel de bootstrap -->
-             <section id="carrusel" class="carrusel">
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active d-item">
-                        <img src="assets/imagenes_carrusel.jpg" class="d-block w-100 d-img" alt="imagen1">
+            <section id="carrusel" class="carrusel">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
                     </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active d-item">
+                            <img src="assets/imagenes_carrusel.jpg" class="d-block w-100 d-img" alt="imagen1">
+                        </div>
 
-                    <div class="carousel-item d-item">
-                        <img src="assets/imagenes_carrusel4.jpg" class="d-block w-100 d-img" alt="imagen2">
-                    </div>
+                        <div class="carousel-item d-item">
+                            <img src="assets/imagenes_carrusel4.jpg" class="d-block w-100 d-img" alt="imagen2">
+                        </div>
 
-                    <div class="carousel-item d-item">
-                        <img src="assets/imagenes_carrusel3.jpg" class="d-block w-100 d-img" alt="imagen3">
+                        <div class="carousel-item d-item">
+                            <img src="assets/imagenes_carrusel3.jpg" class="d-block w-100 d-img" alt="imagen3">
+                        </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
+            </section>
 
             <section id="productos" class="productos" aria-labelledby="descripcion-productos">
                 <div class="productos_descripcion">

@@ -30,12 +30,14 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   top: 0;
   left: 0;
   right: 0;
   padding: .2rem 9%;
+  gap: 1rem;
   background-color: var(--color-primario);
   z-index: 1000;
   box-shadow: 0 0rem 1.5rem var(--color-acentos);
@@ -88,6 +90,7 @@ h3{
 
 .logo img {
   width: 15rem;
+  padding: 0rem 1rem;
 }
 
 .menu_navegacion {
@@ -105,9 +108,10 @@ h3{
 .menu_navegacion a {
   display: block;
   text-decoration: none;
-  font-size: 1.25rem;
-  padding: 0 1.5rem;
+  font-size: 1rem;
+  padding: 0 1rem;
   color: var(--color-texto-primario);
+  
 }
 
 .menu_navegacion a:hover {
@@ -207,7 +211,7 @@ text-align: justify;
 
 .lista_datos_sucursales li::before {
   font-family: "Material Icons"; 
-  font-size: 20px; 
+  font-size: 1.2rem; 
   color:var(--color-texto-primario); 
   position: absolute;
   left: 0;
@@ -283,10 +287,14 @@ font-style: italic;
 .nosotros{
   width: 30rem;
   text-align: center;
+  padding: 0 0;
+  
 }
 .siguenos{
   width: 30rem;
   text-align: center;
+  padding: 0 0;
+  
 }
 .enlaces_redes{
   display: flex;
@@ -307,6 +315,7 @@ font-style: italic;
 
 .nosotros p{
   margin: 1rem 0;
+  
 }
 
 .derechos{
@@ -314,4 +323,9 @@ font-style: italic;
   padding:1rem 0;
 }
 
-/* MEDIA QUERIES -----------------------------------------------------------------------------*/
+/* MEDIA QUERIES -----------------------------------------------------------------------------
+@media screen and (max-width:480px){
+  /* .menu_navegacion a{
+    font-size: .8rem;
+  } 
+}*/
