@@ -395,6 +395,13 @@ select, .fecha, .file{
   text-align: center;
   }
   /*Cajas de información */
+.titulo_pagina_secundario span{
+  font-size: 2rem;
+  margin: .5rem;
+}
+.informacion_nosotros{
+  text-align: justify;
+}
 .contenedor_nosotros{
   display: flex;
   flex-wrap: wrap;  
