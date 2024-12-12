@@ -82,6 +82,9 @@ a{
   text-decoration: none;
   color: var(--color-texto-secundario);
 }
+a:hover{
+  font-weight: bold;
+}
 h3{
   font-size: 1.5rem;
 }
@@ -118,7 +121,7 @@ h1,h2,h3{
 }
 
 .menu_navegacion a:hover {
-  font-weight: bold;
+  
   transition: background-color 0.3s ease;
   
 }
@@ -194,9 +197,7 @@ text-align: justify;
   
 }
 .item_sucursal{
-  width: 25rem;
-  
-  
+  width: 25rem;  
 }
 .lugar{
   text-align: center;
@@ -264,7 +265,6 @@ text-align: justify;
 
 .tarjeta_pedidos:hover{
   transform: scale(1.1);
-  font-weight: bold;
   border:2.5px solid var(--color-bordes);
 }
 .requisitos{
@@ -452,4 +452,41 @@ select, .fecha, .file{
 .carta_nosotros:nth-child(3){
   animation-delay: 1s;
 }
+/* --------------------------------------------ZONA DE MENÚ--------------------------------------------------------- */
+.titulo_pagina_terciario{
+  text-transform: uppercase;
+  background-color: var(--color-secundario);
+  text-align: center;
+  color: var(--color-texto-terciario);
+  font-weight:lighter;
+}
+.contenedor_productos{
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1rem;
+}
+.carta_producto{
+      display: flex;
+      width: 20rem;
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center;
+      border: 1px solid var(--color-bordes); 
+      padding: .6rem;
+      border-radius: .5rem;
+      overflow: hidden;
+}
+.carta_producto img{
+  max-width: 100%;
   
+}
+.carta_producto img:hover{
+  transform: scale(1.9);
+}
+.carta_producto figcaption{
+  text-align: center;
+}
+/* @media screen and (max-width:480px) {}*/
