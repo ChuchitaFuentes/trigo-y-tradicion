@@ -43,7 +43,7 @@ header {
 }
 
  main {
-  padding: 2rem 9%;
+  padding: 1rem 9%;
 } 
 
 footer {
@@ -118,12 +118,15 @@ h3{
 
 /* Contenedor del hero ------------------------------------------------------------*/
 /* Se cargo un carrusel de bootstrap estas son lineas de codigo que se agregaron */
-
+.carrusel{
+  margin: 0;
+  padding: 0;
+}
 .d-item{
-  height: 500px;
+  width: 100%;
 }
 .d-img{
-  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
