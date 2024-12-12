@@ -21,7 +21,7 @@
 body {
   font-family: "Roboto Condensed", sans-serif;
   line-height: 1.5;
-  color: var(--color-texto-primario);
+  color: var(--color-texto-secundario);
   background-color: var(--color-primario);
   margin: 0px;
   padding: 0px;
@@ -80,10 +80,13 @@ hr {
 }
 a{
   text-decoration: none;
-  color: black;
+  color: var(--color-texto-secundario);
 }
 h3{
   font-size: 1.5rem;
+}
+h1,h2,h3{
+  color: var(--color-texto-primario);
 }
 
 /* Header section--------------------------------------------------------------------------------- */
