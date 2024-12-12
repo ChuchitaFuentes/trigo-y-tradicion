@@ -1,24 +1,25 @@
 :root {
   --color-texto-primario: black;
-  --color-texto-secundario:#333;
-  --color-texto-terciario:white;
+  --color-texto-secundario: #333;
+  --color-texto-terciario: white;
   --color-primario: white;
-  --color-secundario:black;
-  --color-terciario:#f8f8f8;
+  --color-secundario: black;
+  --color-terciario: #f8f8f8;
   --color-bordes: darkgray;
   --color-sombras: rgba(125, 150, 144, .5);
-  --color-texto-requisitos:#b9b9b9;
+  --color-texto-requisitos: #b9b9b9;
+  --color-fondo-imagenes: #e6e6e6; /*Solo se coloca para futuras referencias*/
 }
 
-/* Reset básico */
+/*------------------------------------------------------- RESET BÁSICO----------------------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
 
-/* Normalize */
+/* ---------------------------------------------------------NORMALIZE --------------------------------------------------------------*/
 body {
   font-family: "Roboto Condensed", sans-serif;
   line-height: 1.5;
@@ -27,8 +28,7 @@ body {
   margin: 0px;
   padding: 0px;
 }
-
-
+/* ---------------------------------------ESTILOS A HEREDAR A LOS TEXTOS ETIQUETAS PRINCIPALES------------------------------- */
 header {
   display: flex;
   justify-content: center;
@@ -45,9 +45,9 @@ header {
   /*Da sombra a la barra*/
 }
 
- main {
+main {
   padding: 1rem 9%;
-} 
+}
 
 footer {
   display: flex;
@@ -57,19 +57,21 @@ footer {
   width: 100%;
   margin: auto;
   padding: auto;
-  box-shadow: 0rem  0rem 1.5rem var(--color-sombras);
-  
+  box-shadow: 0rem 0rem 1.5rem var(--color-sombras);
+
 }
 
 section {
-  display:block;
+  display: block;
   padding: 2rem 3%;
   margin: 1rem 2%;
-  
+
 }
-h2{
+
+h2 {
   font-size: 2rem;
 }
+
 hr {
   border: none;
   height: 2px;
@@ -79,20 +81,26 @@ hr {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
 }
-a{
+
+a {
   text-decoration: none;
   color: var(--color-texto-secundario);
 }
-a:hover{
+
+a:hover {
   font-weight: bold;
 }
-h3{
+
+h3 {
   font-size: 1.5rem;
 }
-h1,h2,h3{
+
+h1,
+h2,
+h3 {
   color: var(--color-texto-primario);
 }
-
+/* -----------------------------------------INICIA DISEÑO index.html--------------------------------------------------*/
 /* Header section--------------------------------------------------------------------------------- */
 
 .logo img {
@@ -118,54 +126,59 @@ h1,h2,h3{
   font-size: 1rem;
   padding: 0 1rem;
   color: var(--color-texto-primario);
-  
+
 }
 
 .menu_navegacion a:hover {
-  
+
   transition: background-color 0.3s ease;
-  
+
 }
 
 /* Contenedor del hero ------------------------------------------------------------*/
 /* Se cargo un carrusel de bootstrap estas son lineas de codigo que se agregaron */
-.carrusel{
+.carrusel {
   margin: 0;
   padding: 0;
 }
-.d-item{
+
+.d-item {
   width: 100%;
 }
-.d-img{
+
+.d-img {
   width: 100%;
   object-fit: cover;
 }
 
 /* Seccion de Productos----------------------------------------------------------------------- */
-.productos{
+.productos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap:1rem;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
-  
-}
-.productos_descripcion{
-  width: 20rem;
- flex-grow: 2;
-}
-.productos_imagen{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-grow: 1;
-}
-.descripcion_texto{
-text-align: justify;
+
 }
 
-.boton{
+.productos_descripcion {
+  width: 20rem;
+  flex-grow: 2;
+}
+
+.productos_imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.descripcion_texto {
+  text-align: justify;
+}
+
+.boton {
   display: inline-block;
   margin: .5rem auto;
   padding: .5rem;
@@ -185,9 +198,9 @@ text-align: justify;
   width: 12rem;
 }
 
- /* Sección de sucursales ----------------------------------------------------------------------------------- */
- 
-.lista_sucursales{
+/* Sección de sucursales ----------------------------------------------------------------------------------- */
+
+.lista_sucursales {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -195,49 +208,57 @@ text-align: justify;
   justify-content: space-around;
   align-items: flex-start;
   gap: 2rem;
-  
+
 }
-.item_sucursal{
-  width: 25rem;  
+
+.item_sucursal {
+  width: 25rem;
 }
-.lugar{
+
+.lugar {
   text-align: center;
   padding: .7rem;
 }
+
 .lista_datos_sucursales {
-  list-style: none; 
+  list-style: none;
   padding-left: 20px;
 }
 
 .lista_datos_sucursales li {
-  position: relative; 
-  padding-left: 2rem; 
+  position: relative;
+  padding-left: 2rem;
 }
 
 .lista_datos_sucursales li::before {
-  font-family: "Material Icons"; 
-  font-size: 1.2rem; 
-  color:var(--color-texto-primario); 
+  font-family: "Material Icons";
+  font-size: 1.2rem;
+  color: var(--color-texto-primario);
   position: absolute;
   left: 0;
   top: 0;
 }
 
 .lista_datos_sucursales li:first-child::before {
-  content: "location_on"; /* Ícono para el primer elemento */
+  content: "location_on";
+  /* Ícono para el primer elemento */
 }
+
 .lista_datos_sucursales li:nth-child(2)::before {
-  content: "call"; /* Ícono para el segundo elemento */
-  
+  content: "call";
+  /* Ícono para el segundo elemento */
+
 }
+
 .lista_datos_sucursales li:nth-child(3)::before {
-  content: "schedule"; /* Ícono para el tercer elemento */
+  content: "schedule";
+  /* Ícono para el tercer elemento */
 }
 
 
 /* Haz tu pedido -------------------------------------------------------------------------------------------*/
 
-.contenedor_pedidos{
+.contenedor_pedidos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -246,12 +267,12 @@ text-align: justify;
   padding: 1rem;
 }
 
-.tarjeta_pedidos{
+.tarjeta_pedidos {
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-texto-secundario);
-  border:1px solid var(--color-bordes);
+  border: 1px solid var(--color-bordes);
   text-align: center;
   border-radius: 0.5rem;
   width: 12rem;
@@ -260,54 +281,60 @@ text-align: justify;
   padding: 1rem;
 }
 
-.tarjeta_pedidos span{
+.tarjeta_pedidos span {
   font-size: 2rem;
 }
 
-.tarjeta_pedidos:hover{
+.tarjeta_pedidos:hover {
   transform: scale(1.1);
-  border:2.5px solid var(--color-bordes);
+  border: 2.5px solid var(--color-bordes);
 }
-.requisitos{
-text-align: center;
-font-style: italic;
-color: var(--color-texto-requisitos);
+
+.requisitos {
+  text-align: center;
+  font-style: italic;
+  color: var(--color-texto-requisitos);
 }
 
 /* Seccion del footer--------------------------------------------------------- */
- .informacion{
+.informacion {
   display: flex;
   gap: 2rem;
   width: 100%;
   flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: flex-start;
   align-content: center;
- }
-.subtitulo_footer{
+}
+
+.subtitulo_footer {
   font-size: 1.5rem;
   padding: 1rem 0;
-  
+
 }
-.nosotros{
+
+.nosotros {
   width: 30rem;
   text-align: center;
   padding: 0 0;
-  
+
 }
-.siguenos{
+
+.siguenos {
   width: 30rem;
   text-align: center;
   padding: 0 0;
-  
+
 }
-.enlaces_redes{
+
+.enlaces_redes {
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: .5rem;
 }
-.boton_redsocial{
+
+.boton_redsocial {
   border: 1px solid var(--color-bordes);
   display: flex;
   align-items: center;
@@ -318,71 +345,82 @@ color: var(--color-texto-requisitos);
 
 }
 
-.nosotros p{
+.nosotros p {
   margin: 1rem 0;
-  
+
 }
 
-.derechos{
-  margin:1rem 0;
-  padding:1rem 0;
+.derechos {
+  margin: 1rem 0;
+  padding: 1rem 0;
 }
+
 /* ------------------------------------ZONA DE FORMULARIO----------------------------------------------- */
-.titulo_pagina{
-background-color: var(--color-secundario);
-color: var(--color-texto-terciario);
-text-align: center;
+.titulo_pagina {
+  background-color: var(--color-secundario);
+  color: var(--color-texto-terciario);
+  text-align: center;
 }
 
-.formulario{
+.formulario {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   gap: 1rem;
-  
+
 }
-.description{
+
+.description {
   width: 100%;
 }
 
-fieldset{
+fieldset {
   margin: 1rem;
   padding: 1rem;
   border: 1px solid var(--color-bordes);
   border-radius: 1rem;
   width: 100%;
 }
-legend{
+
+legend {
   font-size: 1.2rem;
 }
-.cliente{
+
+.cliente {
   border-radius: 20px;
   border: solid 1px var(--color-bordes);
   width: 50%;
   padding: .5rem;
   margin: .5rem;
 }
-label{
+
+label {
   padding: .5rem;
   margin: .5rem;
 }
-textarea{
- border: 1px solid var(--color-bordes);
- resize: none;
- border-radius: 1rem;
- padding: 1rem;
- 
+
+textarea {
+  border: 1px solid var(--color-bordes);
+  resize: none;
+  border-radius: 1rem;
+  padding: 1rem;
+
 }
-select, .fecha, .file{
+
+select,
+.fecha,
+.file {
   margin: 1rem;
   padding: .5rem;
 }
-.fecha{
+
+.fecha {
   border-radius: 20px;
   border: 1px solid var(--color-bordes)
 }
-.boton_formulario{
-  
+
+.boton_formulario {
+
   background-color: var(--color-secundario);
   color: var(--color-texto-terciario);
   border-radius: 20px;
@@ -391,27 +429,31 @@ select, .fecha, .file{
 }
 
 /* -----------------------------------ZONA DE NOSOTROS------------------------------------------ */
-.titulo_pagina_secundario{
+.titulo_pagina_secundario {
   background-color: var(--color-terciario);
   color: var(--color-texto-primario);
   text-align: center;
-  }
-  /*Cajas de información */
-.titulo_pagina_secundario span{
+}
+
+/*Cajas de información */
+.titulo_pagina_secundario span {
   font-size: 2rem;
   margin: .5rem;
 }
-.informacion_nosotros{
+
+.informacion_nosotros {
   text-align: justify;
 }
-.contenedor_nosotros{
+
+.contenedor_nosotros {
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
   padding: 1rem;
 }
-.carta_nosotros{
+
+.carta_nosotros {
   background-color: var(--color-terciario);
   border: 1px solid var(--color-bordes);
   border-radius: .5rem;
@@ -419,50 +461,56 @@ select, .fecha, .file{
   width: 20rem;
   padding: 1rem;
   text-align: center;
-  transform: translateY(30px); 
-  opacity: 0; 
+  transform: translateY(30px);
+  opacity: 0;
   animation: slideUp 1s ease-out forwards;
 }
-.carta_nosotros p{
+
+.carta_nosotros p {
   text-align: justify;
   margin: .5rem;
   padding: .5rem 0;
 }
-.carta_nosotros h2{
+
+.carta_nosotros h2 {
   margin: 1rem 0;
   padding: .5rem 0;
 }
 
 @keyframes slideUp {
-  50%{
+  50% {
     transform: translateY(-1.2rem);
     opacity: .5;
   }
-  100%{
+
+  100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
-.carta_nosotros:nth-child(1){
+.carta_nosotros:nth-child(1) {
   animation-delay: 0.2s;
 }
 
-.carta_nosotros:nth-child(2){
+.carta_nosotros:nth-child(2) {
   animation-delay: 0.6s;
 }
-.carta_nosotros:nth-child(3){
+
+.carta_nosotros:nth-child(3) {
   animation-delay: 1s;
 }
+
 /* --------------------------------------------ZONA DE MENÚ--------------------------------------------------------- */
-.titulo_pagina_terciario{
+.titulo_pagina_terciario {
   text-transform: uppercase;
   background-color: var(--color-secundario);
   text-align: center;
   color: var(--color-texto-terciario);
-  font-weight:lighter;
+  font-weight: lighter;
 }
-.contenedor_productos{
+
+.contenedor_productos {
   margin: 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -470,59 +518,124 @@ select, .fecha, .file{
   justify-content: center;
   gap: 1rem;
 }
-.carta_producto{
-      display: flex;
-      width: 20rem;
-      flex-direction: column; 
-      align-items: center; 
-      justify-content: center;
-      border: 1px solid var(--color-bordes); 
-      padding: .6rem;
-      border-radius: .5rem;
-      overflow: hidden;
+
+.carta_producto {
+  display: flex;
+  width: 20rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid var(--color-bordes);  */
+  padding: .6rem;
+  border-radius: 1rem;
+  overflow: hidden;
 }
-.carta_producto img{
+
+.carta_producto img {
   max-width: 100%;
+  border-radius: 1rem;
 }
-.carta_producto img:hover{
+
+.carta_producto img:hover {
   transform: scale(1.8);
 }
-.carta_producto figcaption{
+
+.carta_producto figcaption {
   text-align: center;
 }
+
 /* ----------------------------------------------ZONA DE PRODUCTOS SALADOS DULCES PIZZAS--------------------------------- */
-.nav_productos{
+.nav_productos {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   margin: .5rem;
 }
-.categorias{
+
+.categorias {
   display: flex;
   gap: 3rem;
   justify-content: center;
   align-items: center;
 }
-.categorias li{
+
+.categorias li {
   list-style: none;
   text-align: center;
   min-width: 2.5rem;
 }
-.contenedor{
+
+.contenedor {
   width: 100%;
   overflow: hidden;
-}
-.requisitos2{
-  text-align: justify;
-  color: var(--color-texto-requisitos);
+  border-radius: 1rem;
 }
 
+.requisitos2 {
+  text-align: justify;
+  color: var(--color-texto-requisitos);
+  font-style: italic;
+}
+
+/* -------------------------------Sección producto individual-------------------------- */
+.encabezado_secundario {
+  background-color: var(--color-terciario);
+  text-align: center;
+}
+
+.encabezado_secundario h1 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: .2rem;
+}
+
+.encabezado_secundario a {
+  font-size: 1.5rem;
+}
+
+.encabezado_secundario span {
+  margin: .3rem;
+  font-size: 1.8rem;
+}
+
+.contenedor_producto_individual {
+  display: flex;
+  display: wrap;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.texto_producto_individual {
+  display: flex;
+  width: 40rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* border: 1px solid var(--color-bordes);  */
+  padding: .6rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.texto_producto_individual h2 {
+  letter-spacing: .2rem;
+}
+
+.texto_producto_individual p {
+  text-align: justify;
+}
+
+.texto_producto_individual span {
+  margin: 1rem 0rem;
+  font-size: 1.2rem;
+}
 
 /* --------------------------------------------MEDIA QUERIES--------------------------------------------------- */
 @media screen and (max-width:595px) {
-  /* modifica la seccion menu de productos en salados dulces y pizas */
-  .nav_productos{
+
+  /* modifica la seccion menu de productos en salados dulces y pizzas */
+  .nav_productos {
     justify-content: center;
   }
 }
