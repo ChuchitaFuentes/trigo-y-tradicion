@@ -7,6 +7,7 @@
   --color-terciario:#f8f8f8;
   --color-bordes: darkgray;
   --color-sombras: rgba(125, 150, 144, .5);
+  --color-texto-requisitos:#b9b9b9;
 }
 
 /* Reset básico */
@@ -270,6 +271,7 @@ text-align: justify;
 .requisitos{
 text-align: center;
 font-style: italic;
+color: var(--color-texto-requisitos);
 }
 
 /* Seccion del footer--------------------------------------------------------- */
@@ -481,12 +483,46 @@ select, .fecha, .file{
 }
 .carta_producto img{
   max-width: 100%;
-  
 }
 .carta_producto img:hover{
-  transform: scale(1.9);
+  transform: scale(1.8);
 }
 .carta_producto figcaption{
   text-align: center;
 }
-/* @media screen and (max-width:480px) {}*/
+/* ----------------------------------------------ZONA DE PRODUCTOS SALADOS DULCES PIZZAS--------------------------------- */
+.nav_productos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: .5rem;
+}
+.categorias{
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.categorias li{
+  list-style: none;
+  text-align: center;
+  min-width: 2.5rem;
+}
+.contenedor{
+  width: 100%;
+  overflow: hidden;
+}
+.requisitos2{
+  text-align: justify;
+  color: var(--color-texto-requisitos);
+}
+
+
+/* --------------------------------------------MEDIA QUERIES--------------------------------------------------- */
+@media screen and (max-width:595px) {
+  /* modifica la seccion menu de productos en salados dulces y pizas */
+  .nav_productos{
+    justify-content: center;
+  }
+}
