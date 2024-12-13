@@ -19,6 +19,7 @@ El proyecto consiste en una página web básica para una panadería. Está dise�
 ## Tecnologías Utilizadas
 
 - **HTML5**: Lenguaje de marcado principal para estructurar el contenido de la página.
+- **CSS3**: Para estilizar la página y hacerla visualmente atractiva.
 
 ## Características
 
