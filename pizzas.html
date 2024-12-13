@@ -4,88 +4,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Una página simple de una panadería artesanal que muestra los productos, formas de contactarse, direcciones">
-    <meta name="keywords" content="pan, panadería, panaderia, tulancingo, acatlan, artesanal, trigo">
+     <!-- Metadatos para SEO  Optimización para búsqueda de navegadores 
+     description: el navegador las búsquedas muestran una descripción y un título
+     busqueda con un -->
+     <meta name="description" content="Panadería artesanal, nos apasiona el arte de hacer pan, un arte que requiere tiempo,
+     paciencia y dedicación..." />
+    <meta name="keywords" content="pan, panadería, panaderia, tulancingo, acatlan, artesanal, trigo, tradicion">
+    <meta name="author" content="María de Jesús Fuentes">
+    <!-- Open grap nos sirve para optimización en redes sociales como Facebook, Instragram y whatsapp -
+   og:type puede ser web page
+   og:image se puede subir una imagen a un reposotorio
+   og:url se usa para poner la url de esta página
+   -->
+    <meta property="og:title" content="Trigo y Tradición">
+    <meta property="og:description" content="Panadería artesanal, nos apasiona el arte de hacer pan, un arte que requiere tiempo,
+ paciencia y dedicación...">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/ChuchitaFuentes/trigo-y-tradicion/refs/heads/main/assets/logo.png">
+    <meta propertuy="og:url" content="https://chuchitafuentes.github.io/trigo-y-tradicion/index.html">
+    <meta property="og:type" content="webpage">
+    <!-- Twitter Cards para visualizar el contenido compartido en X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Trigo y tradición">
+    <meta name="twitter:description" content="Panadería artesanal, nos apasiona el arte de hacer pan, un arte que requiere tiempo,
+ paciencia y dedicación...">
+    <meta propertuy="twitter:image"
+        content="https://raw.githubusercontent.com/ChuchitaFuentes/trigo-y-tradicion/refs/heads/main/assets/logo.png">
+    <!-- Enlace de las fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- link iconos google -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- link font awesome -->
+    <script src="https://kit.fontawesome.com/20bef6ff43.js" crossorigin="anonymous"></script>
+    <!-- link icono de la pestaña -->
     <link rel="icon" href="./assets/bread.ico" type="image/x-icon">
+    <!-- Conexion con css -->
+    <link rel="stylesheet" href="styles.css">
     <title>Trigo y Tradición.</title>
 </head>
 
 <body>
-
     <header>
-        <a href="index.html"><img src="assets/logo.png" alt="Logo de la empresa" title="Logo" width="20%"></a>
-        <nav>
-            <ul>
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo.png" alt="Logo de la empresa" title="Logo"></a>
+        </div>
+        <nav aria-label="Enlaces de navegación en las secciones" class="menu_navegacion1">
+            <ul class="menu_navegacion">
                 <li><a href="index.html#productos">Productos</a></li>
                 <li><a href="index.html#sucursales">Sucursales</a></li>
                 <li><a href="index.html#pedido">Haz tu pedido</a></li>
             </ul>
         </nav>
-        <h1>PANADERÍA SALADOS</h1>
     </header>
 
     <main>
-        <h2>CONOCE NUESTROS PRODUCTOS</h2>
-        <nav>
+        <h1 class="titulo_pagina_secundario">Pizzas</h1>
+        <h2 class="titulo_pagina_terciario">Conoce nuestros productos</h2>
+        <nav class="nav_productos">
             <h3>CATEGORÍAS</h3>
-            <ul>
+            <ul class="categorias">
                 <li><a href="salados.html">Panaderia salada</a></li>
                 <li><a href="dulce.html">Panadería dulce</a></li>
                 <li><a href="pizzas.html">Pizzas</a></li>
             </ul>
         </nav>
-        <p>*Queremos informarle que los productos que se exhiben en esta pantalla son para propósitos de consulta. Si
-            está interesado en hacer un pedido, le sugerimos que se dirija a la sucursal más cercana. <br> 
-            Las pizzas tienen un tamaño estándar de 60cm de diámetro.</p>
-        <table>
-            <tr>
-                <th>
-                    <figure>
-                        <a href="pepperoni.html">
-                            <img src="assets/pepperoni.png" alt="Pizza pepperoni" width="80%" title="Pepperoni">
-                            <figcaption>Pepperoni   $150.00</figcaption>
-                        </a>
-                    </figure>
-                </th>
-                <th>
-                    <figure>
-                        <a href="hawaiana.html">
-                            <img src="assets/hawaiana.png" alt="Pizza hawaiana" width="80%" title="Hawaiana">
-                            <figcaption>Hawaiana   $170.00</figcaption>
-                        </a>
-                    </figure>
-                </th>
-                <th>
-                    <figure>
-                        <a href="mexicana.html">
-                            <img src="assets/mexicana.png" alt="Pizza mexicana" width="80%" title="Mexicana">
-                            <figcaption>Mexicana   $180.00</figcaption>
-                        </a>
-                    </figure>
-                </th>
-            </tr>
-        </table>
+        <p class="requisitos2">*Queremos informarle que los productos que se exhiben en esta pantalla son para
+            propósitos de consulta. Si
+            está interesado en hacer un pedido, le sugerimos que se dirija a la sucursal más cercana.
+        Las pizzas tienen un tamaño estándar de 60cm de diámetro.</p>
+
+        <div class="contenedor_productos">
+
+            <div class="carta_producto">
+                <a class="contenedor" href="pepperoni.html">
+                    <img src="assets/pepperoni.png" alt="Pizza de pepperoni" title="Pepperoni">
+                </a>
+                <div class="nombre_precio">
+                    <a href="pepperoni.html">
+                        <span>Pizza de pepperoni</span>
+                        <span>$150.00</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="carta_producto">
+                <a class="contenedor" href="hawaiana.html">
+                    <img src="assets/hawaiana.png" alt="Pizza hawaiana" title="hawaiana">
+                </a>
+                <div class="nombre_precio">
+                    <a href="hawaiana.html">
+                        <span>Pizza hawaiana</span>
+                        <span>$170.00</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="carta_producto">
+                <a class="contenedor" href="mexicana.html">
+                    <img src="assets/mexicana.png" alt="Pizza mexicana" title="Mexicana">
+                </a>
+                <div class="nombre_precio">
+                    <a href="mexicana.html">
+                        <span>Pizza mexicana</span>
+                        <span>$180.00</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <section class="nosotros">
-            <h4>DONDE EL TRIGO SE ENCUENTRA CON LA TRADICIÓN</h4>
-            <a href="nosotros.html">Acerca de nosotros</a>
-        </section>
+        <div class="informacion">
+            <section id="nosotros" class="nosotros">
+                <h2 class="subtitulo_footer">Nosotros</h2>
+                <p>"Donde el trigo se encuentra con la tradición..."</p>
+                <a class="boton" href="nosotros.html">Más</a>
+            </section>
 
-        <section class="siguenos">
-            <!--target nos indica si el enlace se abre en una nueva ventana del navegador-->
-            <h5>SÍGUENOS<h5>
-                    <a href="https://facebook.com" target="_blank" style="margin-right:2%; margin-left: 2%"><img
-                            src="assets/facebook.svg" alt="Facebook" width="3%"></a>
-                    <a href="https://twitter.com" target="_blank" style="margin-right:2%; margin-left: 2%"> <img
-                            src="assets/x-twitter.svg" alt="Twitter" width="3%"></a>
-                    <a href="https://instagram.com" target="_blank" style="margin-right:2%; margin-left: 2%"><img
-                            src="assets/instagram.svg" alt="Instagram" width="3%"></a>
-        </section>
-        <p>&copy; 2024 María Fuentes. Todos los derechos reservados.</p>
+            <section id="siguenos" class="siguenos">
+                <h2 class="subtitulo_footer">Síguenos<h2>
+                        <div class="enlaces_redes">
+                            <a class="boton_redsocial" href="https://facebook.com" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a class="boton_redsocial" href="https://instagram.com" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a class="boton_redsocial" href="https://twitter.com" target="_blank"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+            </section>
+        </div>
+        <div>
+            <p class="derechos">&copy; 2024 María Fuentes. Todos los derechos reservados.</p>
+        </div>
     </footer>
 </body>
 
