@@ -4,53 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Una página simple de una panadería artesanal que muestra los productos, formas de contactarse, direcciones">
-    <meta name="keywords" content="pan, panadería, panaderia, tulancingo, acatlan, artesanal, trigo">
+    <!-- Metadatos para SEO  Optimización para búsqueda de navegadores 
+     description: el navegador las búsquedas muestran una descripción y un título
+     busqueda con un -->
+     <meta name="description" content="Panadería artesanal, nos apasiona el arte de hacer pan, un arte que requiere tiempo,
+     paciencia y dedicación..." />
+    <meta name="keywords" content="pan, panadería, panaderia, tulancingo, acatlan, artesanal, trigo, tradicion">
+    <meta name="author" content="María de Jesús Fuentes">
+    <!-- Open grap nos sirve para optimización en redes sociales como Facebook, Instragram y whatsapp -
+   og:type puede ser web page
+   og:image se puede subir una imagen a un reposotorio
+   og:url se usa para poner la url de esta página
+   -->
+    <meta property="og:title" content="Trigo y Tradición">
+    <meta property="og:description" content="Panadería artesanal, nos apasiona el arte de hacer pan, un arte que requiere tiempo,
+ paciencia y dedicación...">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/ChuchitaFuentes/trigo-y-tradicion/refs/heads/main/assets/logo.png">
+    <meta propertuy="og:url" content="https://chuchitafuentes.github.io/trigo-y-tradicion/index.html">
+    <meta property="og:type" content="webpage">
+    <!-- Twitter Cards para visualizar el contenido compartido en X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Trigo y tradición">
+    <meta name="twitter:description" content="Panadería artesanal, nos apasiona el arte de hacer pan, un arte que requiere tiempo,
+ paciencia y dedicación...">
+    <meta propertuy="twitter:image"
+        content="https://raw.githubusercontent.com/ChuchitaFuentes/trigo-y-tradicion/refs/heads/main/assets/logo.png">
+    <!-- Enlace de las fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- link iconos google -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+    <!-- link font awesome -->
+    <script src="https://kit.fontawesome.com/20bef6ff43.js" crossorigin="anonymous"></script>
+    <!-- link icono de la pestaña -->
     <link rel="icon" href="./assets/bread.ico" type="image/x-icon">
+    <!-- Conexion con css -->
+    <link rel="stylesheet" href="styles.css">
     <title>Trigo y Tradición.</title>
 </head>
 
 <body>
 
     <header>
-        <a href="index.html"><img src="assets/logo.png" alt="Logo de la empresa" title="Logo" width="20%"></a>
-        <nav>
-            <ul>
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo.png" alt="Logo de la empresa" title="Logo"></a>
+        </div>
+        <nav aria-label="Enlaces de navegación en las secciones" class="menu_navegacion1">
+            <ul class="menu_navegacion">
                 <li><a href="index.html#productos">Productos</a></li>
                 <li><a href="index.html#sucursales">Sucursales</a></li>
                 <li><a href="index.html#pedido">Haz tu pedido</a></li>
             </ul>
         </nav>
-        <h1>PIZZAS</h1>
-        <a href="index.html"> <span class="material-icons">home</span>Inicio</a>
     </header>
 
     <main>
-        <h2>Pizza hawaiana</h2>
-        <p>La pizza hawaiana ofrece una combinación única de sabores dulces y salados que la han convertido en una opción favorita. Está hecha con una base de masa suave y esponjosa, cubierta de salsa de tomate, una generosa capa de queso mozzarella derretido, jugosos trozos de piña y rebanadas de jamón ahumado. Cada bocado combina el dulzor fresco de la piña con el sabor salado y suave del jamón, creando un contraste delicioso y refrescante. Es perfecta para quienes buscan una opción tropical y diferente en su pizza.</p>
-        <p> $ 170.00 </p>
-        <img src="assets/hawaiana.png" alt="Pizza hawaiana">
+        <div class="encabezado_secundario">
+            <h1>Pizzas</h1>
+            <a href="index.html"> <span class="material-symbols-outlined">home</span>Inicio</a>
+        </div>
+        <div class="contenedor_producto_individual">
+            <div class="carta_producto">
+                <img src="assets/hawaiana.png" alt="Pizza hawaiana">
+                <p class="requisitos2">*Su presentación final podrá cambiar con respecto a las imagenes mostradas.</p>
+            </div>
+            <div class="texto_producto_individual">
+                <h2>PIZZA HAWAIANA</h2>
+                <p>La pizza hawaiana ofrece una combinación única de sabores dulces y salados que la han convertido en una opción favorita. Está hecha con una base de masa suave y esponjosa, cubierta de salsa de tomate, una generosa capa de queso mozzarella derretido, jugosos trozos de piña y rebanadas de jamón ahumado. Cada bocado combina el dulzor fresco de la piña con el sabor salado y suave del jamón, creando un contraste delicioso y refrescante. Es perfecta para quienes buscan una opción tropical y diferente en su pizza.</p>
+                <span> $ 170.00 </span>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <section class="nosotros">
-            <h4>DONDE EL TRIGO SE ENCUENTRA CON LA TRADICIÓN</h4>
-            <a href="nosotros.html">Acerca de nosotros</a>
-        </section>
+        <div class="informacion">
+            <section id="nosotros" class="nosotros">
+                <h2 class="subtitulo_footer">Nosotros</h2>
+                <p>"Donde el trigo se encuentra con la tradición..."</p>
+                <a class="boton" href="nosotros.html">Más</a>
+            </section>
 
-        <section class="siguenos">
-            <!--target nos indica si el enlace se abre en una nueva ventana del navegador-->
-            <h5>SÍGUENOS<h5>
-                    <a href="https://facebook.com" target="_blank" style="margin-right:2%; margin-left: 2%"><img
-                            src="assets/facebook.svg" alt="Facebook" width="3%"></a>
-                    <a href="https://twitter.com" target="_blank" style="margin-right:2%; margin-left: 2%"> <img
-                            src="assets/x-twitter.svg" alt="Twitter" width="3%"></a>
-                    <a href="https://instagram.com" target="_blank" style="margin-right:2%; margin-left: 2%"><img
-                            src="assets/instagram.svg" alt="Instagram" width="3%"></a>
-        </section>
-        <p>&copy; 2024 María Fuentes. Todos los derechos reservados.</p>
+            <section id="siguenos" class="siguenos">
+                <h2 class="subtitulo_footer">Síguenos<h2>
+                        <div class="enlaces_redes">
+                            <a class="boton_redsocial" href="https://facebook.com" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a class="boton_redsocial" href="https://twitter.com" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a class="boton_redsocial" href="https://instagram.com" target="_blank"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+            </section>
+        </div>
+        <div>
+            <p class="derechos">&copy; 2024 María Fuentes. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
 </body>
