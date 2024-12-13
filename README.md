@@ -66,7 +66,7 @@ Este es proyecto es una página web y puede ser utilizado como ejemplo para crea
 ## Autor 
 
 - Nombre: María de Jesús Fuentes
-- GitHub: ChuhitaFuentes
+- GitHub: ChuchitaFuentes
 
 ## Agradecimientos
 
